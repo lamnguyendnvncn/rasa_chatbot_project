@@ -1,0 +1,131 @@
+{
+  "compensation": {
+    "precision": 0.968671679197995,
+    "recall": 0.9809644670050761,
+    "f1-score": 0.9747793190416141,
+    "support": 3940,
+    "confused_with": {
+      "benefits": 24,
+      "recruiting": 19
+    }
+  },
+  "benefits": {
+    "precision": 0.9582945942356222,
+    "recall": 0.9779072919490377,
+    "f1-score": 0.9680016099818878,
+    "support": 7378,
+    "confused_with": {
+      "faq1": 30,
+      "recruiting": 29
+    }
+  },
+  "olivia": {
+    "precision": 0.9772705970568938,
+    "recall": 0.9401713255184851,
+    "f1-score": 0.958362057079829,
+    "support": 22180,
+    "confused_with": {
+      "recruiting": 892,
+      "faq1": 172
+    }
+  },
+  "faq1": {
+    "precision": 0.9415428845232391,
+    "recall": 0.9041965764770845,
+    "f1-score": 0.9224919017886485,
+    "support": 10866,
+    "confused_with": {
+      "recruiting": 669,
+      "benefits": 78
+    }
+  },
+  "team": {
+    "precision": 0.9257142857142857,
+    "recall": 0.8651535380507344,
+    "f1-score": 0.8944099378881988,
+    "support": 1498,
+    "confused_with": {
+      "recruiting": 81,
+      "faq1": 35
+    }
+  },
+  "company": {
+    "precision": 0.9441999371266897,
+    "recall": 0.928726035868893,
+    "f1-score": 0.9363990646921277,
+    "support": 6468,
+    "confused_with": {
+      "recruiting": 107,
+      "olivia": 91
+    }
+  },
+  "events": {
+    "precision": 0.9825174825174825,
+    "recall": 0.972318339100346,
+    "f1-score": 0.9773913043478261,
+    "support": 289,
+    "confused_with": {
+      "recruiting": 3,
+      "policies": 3
+    }
+  },
+  "policies": {
+    "precision": 0.9457789979409746,
+    "recall": 0.9229738780977896,
+    "f1-score": 0.9342372881355931,
+    "support": 1493,
+    "confused_with": {
+      "recruiting": 46,
+      "faq1": 23
+    }
+  },
+  "recruiting": {
+    "precision": 0.9144093948225613,
+    "recall": 0.9679687854453065,
+    "f1-score": 0.9404271262645186,
+    "support": 22041,
+    "confused_with": {
+      "olivia": 280,
+      "faq1": 179
+    }
+  },
+  "culture": {
+    "precision": 0.9340342197485054,
+    "recall": 0.9431723563696919,
+    "f1-score": 0.9385810460901087,
+    "support": 4804,
+    "confused_with": {
+      "recruiting": 61,
+      "faq1": 55
+    }
+  },
+  "development": {
+    "precision": 0.953714981729598,
+    "recall": 0.9470819473843363,
+    "f1-score": 0.9503868912152935,
+    "support": 3307,
+    "confused_with": {
+      "recruiting": 90,
+      "faq1": 29
+    }
+  },
+  "accuracy": 0.946050507927466,
+  "macro avg": {
+    "precision": 0.9496499140558043,
+    "recall": 0.9409667764787983,
+    "f1-score": 0.9450425042296042,
+    "support": 84264
+  },
+  "weighted avg": {
+    "precision": 0.9467728194188084,
+    "recall": 0.946050507927466,
+    "f1-score": 0.946031264911785,
+    "support": 84264
+  },
+  "micro avg": {
+    "precision": 0.946050507927466,
+    "recall": 0.946050507927466,
+    "f1-score": 0.946050507927466,
+    "support": 84264
+  }
+}

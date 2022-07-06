@@ -1,0 +1,1572 @@
+version: "3.1"
+
+intents:
+- faq1
+- benefits
+- company
+- compensation
+- culture
+- development
+- events
+- jobs
+- olivia
+- policies
+- recruiting
+- team
+
+entities:
+- benefits_type
+- company_information
+- company_name
+- compensation_type
+- culture_type
+- development_type
+- event_type
+- job_information
+- keywords
+- language
+- no_entity
+- olivia_type
+- policy_type
+- recruiting_information
+- team_type
+
+responses:
+  utter_benefits/ask_Benefits:
+  - text: "At Paradox, we provide a full range of benefits for our employees and their eligible family members. Our comprehensive benefits package includes medical, dental and vision coverage, along with life insurance and disability income benefits.| lien test"
+
+  utter_benefits/ask_Benefits_Eligibility:
+  - text: "At Paradox, we provide a full range of benefits for our employees and their eligible family members."
+
+  utter_benefits/ask_Benefits_Enrollment:
+  - text: "Eligibility waiting period for our benefits is the first of the month following date of hire. (Example: If you are hired on January 10 your effective date is February 1)"
+
+  utter_benefits/ask_Benefits_Insurance:
+  - text: "nan"
+
+  utter_benefits/ask_Benefits_Insurance_AccidentalDeath:
+  - text: "nan"
+
+  utter_benefits/ask_Benefits_Insurance_Dental:
+  - text: "At Paradox, we provide dental insurance for our employees and their eligible family members through Principal."
+
+  utter_benefits/ask_Benefits_Insurance_DependentCare:
+  - text: "Thank you for asking about dependent care assistance. We currently don't offer this as part of our benefits package."
+
+  utter_benefits/ask_Benefits_Insurance_EAP:
+  - text: "Our employees have access to Care24 Services, which is available 24 hours a day, 7 days a week. Care24 offers a wide range of health and well-being information ranging from medical and family matters to personal legal, financial and emotional needs."
+
+  utter_benefits/ask_Benefits_Insurance_FlexibleSpendingAccount:
+  - text: "Thank you for asking about flexible spending accounts (FSA). We currently don't offer this as part of our benefits package."
+
+  utter_benefits/ask_Benefits_Insurance_HealthcareOnsite:
+  - text: "We don't have a healthcare facility onsite, however, our employees have access to a first aid kit if needed."
+
+  utter_benefits/ask_Benefits_Insurance_HealthSavingsAccount:
+  - text: "We offer medical insurance through United Healthcare, which includes a health savings account option."
+
+  utter_benefits/ask_Benefits_Insurance_Life:
+  - text: "At Paradox, we provide our full-time employees with group term life insurance through Lincoln Financial for $25,000; the amount for our managers is $50,000."
+
+  utter_benefits/ask_Benefits_Insurance_LongTermDisability:
+  - text: "We provide our full-time employees with long-term disability income benefits and pay the full cost of this coverage. In the event you become disabled, our disability income benefits are provided as a source of income."
+
+  utter_benefits/ask_Benefits_Insurance_Medical:
+  - text: "At Paradox, we provide medical insurance for our employees and their eligible family members through United Healthcare. We offer a full selection of healthcare programs with prescription drug coverage."
+
+  utter_benefits/ask_Benefits_Insurance_OccupationAccident:
+  - text: "Thank you for asking about our occupational accident insurance. We currently don't offer this as part of our benefits package."
+
+  utter_benefits/ask_Benefits_Insurance_ShortTermDisability:
+  - text: "We provide our full-time employees with short-term disability income benefits. This coverage is voluntary, so each employee would be responsible for paying the monthly premium. In the event you become disabled, our disability income benefits are provided as a source of income."
+
+  utter_benefits/ask_Benefits_Insurance_Vision:
+  - text: "At Paradox, we provide vision insurance for our employees and their eligible family members through Humana."
+
+  utter_benefits/ask_Benefits_Insurance_Wellness:
+  - text: "Thank you for asking about wellness program options. We currently don't offer this as part of our benefits package."
+
+  utter_benefits/ask_Benefits_Other:
+  - text: "We provide a full range of benefits for our employees and their eligible family members. Our comprehensive benefits package includes insurance and retirement benefits."
+
+  utter_benefits/ask_Benefits_Other_Adoption:
+  - text: "Thank you for asking about adoption assistance. We currently don't offer this as part of our benefits package."
+
+  utter_benefits/ask_Benefits_Other_ChildCare:
+  - text: "Thank you for asking about child care assistance. We currently don't offer this as part of our benefits package."
+
+  utter_benefits/ask_Benefits_Other_Commuting:
+  - text: "Thank you for asking about commuting benefits. We currently don't offer this as part of our benefits package."
+
+  utter_benefits/ask_Benefits_Other_CompanyCar:
+  - text: "Thank you for asking about company car programs. We currently don't offer this as part of our benefits package."
+
+  utter_benefits/ask_Benefits_Other_EmployeeDiscounts:
+  - text: "Thank you for asking about employee discounts. We currently don't offer this as part of our benefits package."
+
+  utter_benefits/ask_Benefits_Other_IdentityTheft:
+  - text: "Thank you for asking about identity theft protection. We currently don't offer this as part of our benefits package."
+
+  utter_benefits/ask_Benefits_Other_MobilePhoneDiscount:
+  - text: "Thank you for asking about mobile phone discounts. We currently don't offer this as part of our benefits package."
+
+  utter_benefits/ask_Benefits_Other_Pet:
+  - text: "Thank you for asking about pet insurance coverage. We currently don't offer this as part of our benefits package."
+
+  utter_benefits/ask_Benefits_Other_PrePaidLegal:
+  - text: "Our employees have access to Care24 Services, which is available 24 hours a day, 7 days a week. Care24 representatives can offer personal legal advice."
+
+  utter_benefits/ask_Benefits_Other_Relocation:
+  - text: "Thank you for asking about relocation assistance. We handle relocation on a case by case basis."
+
+  utter_benefits/ask_Benefits_Other_Union:
+  - text: "Thank you for asking about unions. We do not currently have partnerships or affiliation with unions."
+
+  utter_benefits/ask_Benefits_Other_WorkingRemotely:
+  - text: "nan"
+
+  utter_benefits/ask_Benefits_Retirement:
+  - text: "We provide our full-time employees with group term accidental death and dismemberment (AD&D) insurance through Lincoln Financial for $25,000; the amount for managers is $50,000."
+
+  utter_benefits/ask_Benefits_Retirement_401K:
+  - text: "At Paradox, we provide a full range of benefits, including medical, dental and vision coverage, along with life insurance and disability income benefits."
+
+  utter_benefits/ask_Benefits_Retirement_ESOP:
+  - text: "nan"
+
+  utter_benefits/ask_Benefits_Retirement_PensionPlan:
+  - text: "nan"
+
+  utter_benefits/ask_Benefits_TimeOff:
+  - text: "nan"
+
+  utter_benefits/ask_Benefits_TimeOff_Bereavement:
+  - text: "nan"
+
+  utter_benefits/ask_Benefits_TimeOff_CompressedWorkWeek:
+  - text: "nan"
+
+  utter_benefits/ask_Benefits_TimeOff_FMLA:
+  - text: "nan"
+
+  utter_benefits/ask_Benefits_TimeOff_Holidays:
+  - text: "We offer our employees seven paid holidays: New Year's Day, Memorial Day, Independence Day, Labor Day, Thanksgiving, the day after Thanksgiving and Christmas Day."
+
+  utter_benefits/ask_Benefits_TimeOff_JuryDuty:
+  - text: "We of course honor your civic duty for jury duty, as with all time off, we just expect you to communicate with your manager."
+
+  utter_benefits/ask_Benefits_TimeOff_Maternity:
+  - text: "We offer 12 weeks unpaid for maternity leave. In addition, expecting mothers can apply for short-term disability income benefits to receive a percentage of their pay."
+
+  utter_benefits/ask_Benefits_TimeOff_Military:
+  - text: "At Paradox, we support our military and work with each individual on any leave required for active duty."
+
+  utter_benefits/ask_Benefits_TimeOff_NationalGuard:
+  - text: "At Paradox, we support our military and work with each individual on any leave required for reserve duty."
+
+  utter_benefits/ask_Benefits_TimeOff_Parental:
+  - text: "We offer up to 12 weeks unpaid for parental leave. In addition, expecting mothers can apply for short-term disability income benefits to receive a percentage of their pay."
+
+  utter_benefits/ask_Benefits_TimeOff_Paternity:
+  - text: "We offer up to 12 weeks unpaid for parental leave. In addition, expecting mothers can apply for short-term disability income benefits to receive a percentage of their pay."
+
+  utter_benefits/ask_Benefits_TimeOff_PTO:
+  - text: "At Paradox, we offer our employees a time off policy without specific limits. You can use your judgment, as long as you get the job done. Please speak to your manager about expectations for requesting time off."
+
+  utter_benefits/ask_Benefits_TimeOff_Sabbatical:
+  - text: "At Paradox, we offer our employees a time off policy without specific limits. You can use your judgment, as long as you get the job done. Please speak to your manager about expectations for requesting time off."
+
+  utter_benefits/ask_Benefits_TimeOff_Sick:
+  - text: "At Paradox, we offer our employees a time off policy without specific limits. You can use your judgment, as long as you get the job done. Please speak to your manager about expectations for requesting time off."
+
+  utter_benefits/ask_Benefits_TimeOff_Unpaid:
+  - text: "We view unpaid time off on a case-by-case basis."
+
+  utter_benefits/ask_Benefits_TimeOff_Vacation:
+  - text: "At Paradox, we offer our employees a time off policy without specific limits. You can use your judgment, as long as you get the job done. Please speak to your manager about expectations for requesting time off."
+
+  utter_benefits/ask_Benefits_TimeOff_Volunteer:
+  - text: "We view time off for volunteer activities on a case-by-case basis."
+
+  utter_company/ask_Company:
+  - text: "At Paradox, we're inspired by the paradoxical concept that AI can make the candidate experience more human. That's why Paradox built me—an AI assistant obsessed with improving and reinventing the candidate experience."
+
+  utter_company/ask_Company_Awards:
+  - text: "We are just getting started, and we're more concerned with serving our clients than getting awards—although we're sure they'll come in the future."
+
+  utter_company/ask_Company_Awards_Community:
+  - text: "We're shaking up Arizona and want to be the Valley's AI leader, but we're still new. We want the best people to help us change the world."
+
+  utter_company/ask_Company_Awards_Industry:
+  - text: "We're shaking up the industry, but we're still new. We want the best people to help us change the world."
+
+  utter_company/ask_Company_BBB:
+  - text: "That's a great question! While I don't have an answer for you at this time, I encourage you to check out some of our client reviews here: https://paradox.ai/clients"
+
+  utter_company/ask_Company_Charity:
+  - text: "Thank you for asking about charities. We're committed to the employment and job search industry, and help various groups with community job search."
+
+  utter_company/ask_Company_Classification:
+  - text: "We are a technology company focused on improving the recruiting industry. #ai-name, the flagship product of Paradox, is designed to build a better candidate experience as an AI assistant."
+
+  utter_company/ask_Company_Competition:
+  - text: "There's always something to improve, something to adapt, something more we can do to address our clients' needs. We don't want to follow our competitors, we strive to lead the HR technology industry."
+
+  utter_company/ask_Company_Competition_Advantage:
+  - text: "Our core product offerings use innovative technology to serve small businesses to large enterprises. We also work with our clients to implement custom solutions that fit their unique needs."
+
+  utter_company/ask_Company_CorporateResponsibility:
+  - text: "We have a responsibility to our employers and our job seekers and treat that with the utmost importance."
+
+  utter_company/ask_Company_Customers:
+  - text: "Our clients are employers from every industry within the United States and abroad. They range in size from SMB to global enterprises and RPOs."
+
+  utter_company/ask_Company_Customers_Support:
+  - text: "I'm here to assist potential candidates with job-related questions. For other inquiries, please click here: https://paradox.ai/contact"
+
+  utter_company/ask_Company_FacilityTours:
+  - text: "Thank you for asking about facility tours. Reach out to our recruiter and we're happy to show you around."
+
+  utter_company/ask_Company_Financial:
+  - text: "Paradox is a privately-held company, so we don't share our financial information."
+
+  utter_company/ask_Company_Financial_EPS:
+  - text: "As a privately-held company, we don't have any earnings per share (EPS)."
+
+  utter_company/ask_Company_Financial_Health:
+  - text: "Paradox is a privately-held company, so we don't share our financial information, but we're growing and doing some amazing things!"
+
+  utter_company/ask_Company_Financial_Private:
+  - text: "Paradox is privately-held, owned by Aaron Matos and backed by Recruiting Ventures. "
+
+  utter_company/ask_Company_Financial_Public:
+  - text: "Paradox is not a public company but is privately-held and backed by Recruiting Ventures. "
+
+  utter_company/ask_Company_Financial_Revenue:
+  - text: "Paradox is a privately-held company, so we don't share our financial information."
+
+  utter_company/ask_Company_Financial_StockPrice:
+  - text: "As a privately-held company, we don't have a public stock price."
+
+  utter_company/ask_Company_Financial_StockTicker:
+  - text: "As a privately-held company, we don't have a public stock ticker."
+
+  utter_company/ask_Company_Future:
+  - text: "We’re a start-up that’s growing fast and building the foundation for a company that can disrupt the recruiting industry. We have a very exciting future ahead of us!"
+
+  utter_company/ask_Company_History:
+  - text: "Paradox was founded by Aaron Matos. In the summer of 2016, Paradox launched me as their flagship product. I'm designed to build a better candidate experience as an AI assistant."
+
+  utter_company/ask_Company_History_FoundedWhen:
+  - text: "Paradox was founded in 2016 by Arizona technology executive Aaron Matos."
+
+  utter_company/ask_Company_History_FoundedWhere:
+  - text: "Paradox was founded in Scottsdale, Arizona."
+
+  utter_company/ask_Company_History_FoundedWho:
+  - text: "Paradox was founded by Arizona technology executive Aaron Matos."
+
+  utter_company/ask_Company_History_FoundedWhy:
+  - text: "Paradox exists for one reason: to help our clients succeed by recruiting the right people. Our approach is to build software that makes it easier for recruiters and job seekers to find each other and connect."
+
+  utter_company/ask_Company_Industry:
+  - text: "Paradox is competing in the HR technology industry, specifically focusing on bringing artificial intelligence to recruiting technology and automation. "
+
+  utter_company/ask_Company_Investors:
+  - text: "Paradox is backed and funded by Recruiting Ventures. We have the capital to grow, expand, and acquire."
+
+  utter_company/ask_Company_Location:
+  - text: "Our headquarters is based out of The Quad complex in Scottsdale, AZ. You can find us at 6330 E. Thomas Road, Scottsdale, AZ 85251."
+
+  utter_company/ask_Company_Location_Activities:
+  - text: "The city of Scottsdale offers plenty of things to do, including shopping, outdoor activities, a variety of restaurants and a vibrant night life."
+
+  utter_company/ask_Company_Location_Count:
+  - text: "Our headquarters is based out of The Quad complex in Scottsdale, AZ."
+
+  utter_company/ask_Company_Location_Directions:
+  - text: "The Paradox office is located at The Quad: 6330 E. Thomas Road Scottsdale, AZ 85251."
+
+  utter_company/ask_Company_Location_Gym:
+  - text: "There are two on-site gyms, which makes workouts possible even with a packed schedule. You'll see we're just as serious about building our health as building our business."
+
+  utter_company/ask_Company_Location_Parking:
+  - text: "The Quad offers abundant parking for visitors and our employees who choose to drive to work. Paradox is located at 6330 E. Thomas Road, Scottsdale, AZ 85251."
+
+  utter_company/ask_Company_Location_Phone:
+  - text: "I'm here to answer your questions. You can also reach our recruiter, Lauren, at 602.914.7647."
+
+  utter_company/ask_Company_Location_Restaurants:
+  - text: "Our office is conveniently located in downtown Scottsdale where you'll find a variety of restaurants in the surrounding area."
+
+  utter_company/ask_Company_Press:
+  - text: "Thank you for asking about our press releases. The News section of our site is coming very soon!"
+
+  utter_company/ask_Company_PreviousWork:
+  - text: "Paradox is a portfolio company of Recruiting Ventures. Our companies have served hundreds of millions of job seekers, tens of thousands of employers through the years, and have sold hundreds of millions of dollars of software."
+
+  utter_company/ask_Company_Product:
+  - text: "I'm the flagship product of Paradox, designed to build a better candidate experience as an AI assistant."
+
+  utter_company/ask_Company_ProfessionalAssociations:
+  - text: "We review membership in professional associations on a case-by-case basis."
+
+  utter_company/ask_Company_Purpose:
+  - text: "We believe that the power of AI can improve candidate and recruiter experiences and allow recruiters to do what they do best. "
+
+  utter_company/ask_Company_Purpose_Mission:
+  - text: "At Paradox, we want to transform the recruiting experience through the power of AI."
+
+  utter_company/ask_Company_Purpose_Values:
+  - text: "We work hard and play hard. We're transforming recruiting but are still new as a founding team. If you're up to the challenge, we want you to help us create the future!"
+
+  utter_company/ask_Company_Purpose_Vision:
+  - text: "We believe that the power of AI can improve candidate and recruiter experiences, and allow recruiters to do what they do best. "
+
+  utter_company/ask_Company_Service:
+  - text: "We have a team of product experts who are eager and willing to help all of our clients with their recruiting needs."
+
+  utter_company/ask_Company_Size:
+  - text: "We’re a start-up that’s growing fast and building the foundation for a company that can disrupt the recruiting industry. We have a very exciting future ahead of us!"
+
+  utter_company/ask_Company_Social:
+  - text: "I absolutely love what I do at Paradox and I'm not afraid to share it! Follow me on our many social media profiles for the latest updates."
+
+  utter_company/ask_Company_Social_Facebook:
+  - text: "I love sharing our exciting news and photos of our team on Facebook! Follow me for the latest updates here: https://www.facebook.com/Paradox#ai-name/"
+
+  utter_company/ask_Company_Social_Flickr:
+  - text: "We love what we do here and I enjoy capturing all of the exciting things happening at Paradox! Find us on Flickr here: https://www.flickr.com/photos/158699960@N03/"
+
+  utter_company/ask_Company_Social_Glassdoor:
+  - text: "I don't mean to brag, but I absolutely love what I do at Paradox! Find out why you should join us on Glassdoor."
+
+  utter_company/ask_Company_Social_GooglePlus:
+  - text: "I absolutely love what I do at Paradox and I'm not afraid to share it! Follow me on our many social media profiles for the latest updates."
+
+  utter_company/ask_Company_Social_Instagram:
+  - text: "We love what we do here and I enjoy capturing all of the exciting things happening at Paradox. Follow @Paradox#ai-name on Instagram for some #instafun photos!"
+
+  utter_company/ask_Company_Social_LinkedIn:
+  - text: "I don't mean to brag, but I absolutely love what I do at Paradox! Find out why you should join us on LinkedIn: https://www.linkedin.com/company/10804989/"
+
+  utter_company/ask_Company_Social_Pinterest:
+  - text: "I'm always pinning away during my free time! Check out our Pinterest boards for exciting new ideas. https://www.pinterest.com/Paradox#ai-name/"
+
+  utter_company/ask_Company_Social_Snapchat:
+  - text: "We love what we do here and I enjoy snapping stories of all the exciting things happening at Paradox! Add me on Snapchat: Paradox#ai-name"
+
+  utter_company/ask_Company_Social_Tumblr:
+  - text: "I absolutely love what I do at Paradox and I'm not afraid to share it! Follow me on our many social media profiles for the latest updates."
+
+  utter_company/ask_Company_Social_Twitter:
+  - text: "I love sharing our exciting news and photos of our team on Twitter! Follow me for the latest updates here: https://twitter.com/Paradox#ai-name"
+
+  utter_company/ask_Company_Social_Vimeo:
+  - text: "Visit our Vimeo channel for videos of all the exciting things happening at Paradox! https://vimeo.com/paradoxolivia"
+
+  utter_company/ask_Company_Social_YouTube:
+  - text: "Thank you for asking about YouTube! We do not have a YouTube channel at this time. Follow us on Facebook or Twitter for exciting updates!"
+
+  utter_company/ask_Company_Success:
+  - text: "I'm working for world-class organizations to improve both the candidate and recruiter experience. We have a lot to do to accomplish our dreams—and we’re just getting started!"
+
+  utter_company/ask_Company_WhatsNew:
+  - text: "We have a very exciting future ahead of us! Our blog is coming very soon."
+
+  utter_company/ask_Company_WhyShouldIWorkForYou:
+  - text: "We're looking for the best talent to join our team. We need different types of talent, but first and foremost, we need superstars who want to sacrifice and build a company together. If that's you, thanks for raising your hand!"
+
+  utter_compensation/ask_Compensation:
+  - text: "We offer competitive salaries, advancement opportunities, a full range of benefits and the chance to join a start-up that is disrupting the recruiting industry."
+
+  utter_compensation/ask_Compensation_Deductions:
+  - text: "Federal and state income taxes, and FICA taxes will be automatically deducted from your paycheck. If you are enrolled in our insurance or 401k plans, your designated amount(s) will also be deducted from your paycheck."
+
+  utter_compensation/ask_Compensation_Deductions_401K:
+  - text: "If you are contributing to our 401k Profit Sharing Plan, the amount you designated upon enrollment will be automatically deducted from your paycheck."
+
+  utter_compensation/ask_Compensation_Deductions_FederalTaxes:
+  - text: "Federal income taxes will be automatically deducted from your paycheck."
+
+  utter_compensation/ask_Compensation_Deductions_FSA:
+  - text: "Thank you for asking about FSA deductions. We currently don't offer this as part of our benefits package."
+
+  utter_compensation/ask_Compensation_Deductions_Insurance:
+  - text: "If you are enrolled in our insurance, your designated amount(s) will be automatically deducted from your paycheck."
+
+  utter_compensation/ask_Compensation_Deductions_SocialSecurity:
+  - text: "Social Security will be automatically deducted from your paycheck."
+
+  utter_compensation/ask_Compensation_Deductions_StateTaxes:
+  - text: "State income taxes will be automatically deducted from your paycheck."
+
+  utter_compensation/ask_Compensation_Negotiable:
+  - text: "All compensation will be negotiated between you and your manager, and will be based on your role, education and experience."
+
+  utter_compensation/ask_Compensation_Negotiable_Education:
+  - text: "All compensation will be negotiated between you and your manager, and will be based on your role, education and experience."
+
+  utter_compensation/ask_Compensation_Negotiable_Experience:
+  - text: "All compensation will be negotiated between you and your manager, and will be based on your role, education and experience."
+
+  utter_compensation/ask_Compensation_Negotiable_Multilingual:
+  - text: "All compensation will be negotiated between you and your manager, and will be based on your role, education and experience."
+
+  utter_compensation/ask_Compensation_Negotiable_Skills:
+  - text: "All compensation will be negotiated between you and your manager, and will be based on your role, education and experience."
+
+  utter_compensation/ask_Compensation_Pay:
+  - text: "We offer competitive salaries, advancement opportunities, a full range of benefits and the chance to join a start-up that is disrupting the recruiting industry."
+
+  utter_compensation/ask_Compensation_Pay_Bonus:
+  - text: "Various roles at Paradox may receive bonuses. This will be discussed between you and your manager."
+
+  utter_compensation/ask_Compensation_Pay_CashIncentives:
+  - text: "Various roles at Paradox may receive cash incentives. This will be discussed between you and your manager."
+
+  utter_compensation/ask_Compensation_Pay_COLA:
+  - text: "Thank you for asking about cost of living adjustments. This will depend on where you're coming from when joining Paradox. Please talk to our recruiter for more information."
+
+  utter_compensation/ask_Compensation_Pay_Commission:
+  - text: "Various roles at Paradox may receive commissions. This will be discussed between you and your manager."
+
+  utter_compensation/ask_Compensation_Pay_Contract:
+  - text: "Thank you for asking about contract work. At the present time, we are looking for full-time employees."
+
+  utter_compensation/ask_Compensation_Pay_ESPP:
+  - text: "In addition to the compensation and benefits package, Paradox will offer equity incentive plans where appropriate."
+
+  utter_compensation/ask_Compensation_Pay_Hourly:
+  - text: "We offer competitive compensation, advancement opportunities, a full range of benefits and the chance to join a start-up that is disrupting the recruiting industry."
+
+  utter_compensation/ask_Compensation_Pay_Method:
+  - text: "That's a great question! Paradox employees are paid by direct deposit. Employees will receive a W-2 at the beginning of each year for taxes."
+
+  utter_compensation/ask_Compensation_Pay_NonCashIncentives:
+  - text: "In addition to the compensation and benefits package, Paradox will offer equity incentive plans where appropriate."
+
+  utter_compensation/ask_Compensation_Pay_Raise:
+  - text: "Great question! All compensation will be negotiated between you and your manager, and will be based on your role and experience."
+
+  utter_compensation/ask_Compensation_Pay_Salary:
+  - text: "We offer competitive salaries, advancement opportunities, a full range of benefits and the chance to join a start-up that is disrupting the recruiting industry."
+
+  utter_compensation/ask_Compensation_Pay_Schedule:
+  - text: "Paradox distributes paychecks on the 5th and 20th of every month. If either of those dates falls on a Saturday or Sunday, we'll distribute paychecks on Friday or Monday, respectively."
+
+  utter_compensation/ask_Compensation_Pay_WorkersComp:
+  - text: "We provide workers' compensation as required by the State of Arizona. We don't want you getting hurt playing with AI! :)"
+
+  utter_compensation/ask_Compensation_Reimbursement:
+  - text: "At Paradox, we offer reimbursements for eligible business expenses, such as meals, travel expenses and office supplies."
+
+  utter_compensation/ask_Compensation_Reimbursement_Entertainment:
+  - text: "We offer entertainment reimbursements for meals with clients and approved team outings."
+
+  utter_compensation/ask_Compensation_Reimbursement_Expenses:
+  - text: "We offer reimbursements for eligible business expenses."
+
+  utter_compensation/ask_Compensation_Reimbursement_Travel:
+  - text: "At Paradox, we offer travel reimbursements for meals, airline tickets, rental cars, and other eligible travel expenses."
+
+  utter_culture/ask_Culture:
+  - text: "This isn't your typical 9-to-5 job. We're a start-up in every sense of the word. Every day is fun and challenging when you're working hard to change the world! Our team spends a long time building the culture we have today and we are proud to share it! | Every day is fun and challenging here at Paradox! We're working to build leading AI technology to improve both the candidate and recruiter experience."
+
+  utter_culture/ask_Culture_Communication:
+  - text: "We believe progress comes from sharing ideas, so we encourage open dialogue across the entire company. That openness ensures ideas are spread and questions are addressed."
+
+  utter_culture/ask_Culture_Communication_CompanyBlog:
+  - text: "I'm glad you are excited to learn more about Paradox! Our blog is coming very soon!"
+
+  utter_culture/ask_Culture_Communication_CompanyNewsletter:
+  - text: "I'm glad you are excited to learn more about Paradox! Our blog is coming very soon!"
+
+  utter_culture/ask_Culture_Communication_EmployeeBlog:
+  - text: "I'm glad you are excited to learn more about Paradox! Our blog is coming very soon!"
+
+  utter_culture/ask_Culture_Communication_EmployeeHandbook:
+  - text: "All employees will have access to our policy guidelines, which foster our values of high standards, collaboration, innovation, and sound leadership."
+
+  utter_culture/ask_Culture_Communication_EmployeeNewsletter:
+  - text: "We don't have an internal newsletter, however, we utilize communications tools, such as G Suite and Slack, to keep our employees informed and up-to-date."
+
+  utter_culture/ask_Culture_Communication_EmployeeSurvey:
+  - text: "We are such a small team, so we don't provide formal surveys. Although, we do encourage open communication between our team!"
+
+  utter_culture/ask_Culture_Communication_ManagerMeetings:
+  - text: "Our managers meet with our employees and with one another every day. Feedback happens everyday!"
+
+  utter_culture/ask_Culture_Communication_MeetingProcess:
+  - text: "Employees are welcome to make use of any available conference rooms for internal and client meetings."
+
+  utter_culture/ask_Culture_Communication_Meetings:
+  - text: "Our company meets as needed (monthly or sometimes more frequently!) to make announcements, and discuss our results and future goals."
+
+  utter_culture/ask_Culture_DressCode:
+  - text: "Our typical dress code is business casual, however, there's no harm in dressing up every now and then!"
+
+  utter_culture/ask_Culture_DressCode_Appearance:
+  - text: "Paradox recognizes that personal appearance is an important element of self-expression. We ask that employees exercise appropriate judgment with regard to their appearance."
+
+  utter_culture/ask_Culture_DressCode_BusinessCasual:
+  - text: "Our typical dress code is business casual, however, there's no harm in dressing up every now and then!"
+
+  utter_culture/ask_Culture_DressCode_Casual:
+  - text: "Our typical dress code is business casual, however, there's no harm in dressing up every now and then!"
+
+  utter_culture/ask_Culture_DressCode_CasualFriday:
+  - text: "Our typical dress code is business casual, however, don't be afraid to rock your Paradox shirt on Fridays—or every day! :)"
+
+  utter_culture/ask_Culture_DressCode_CompanyApparel:
+  - text: "All of our employees receive branded apparel, so you'll be able to rock your Paradox shirt whenever you want!"
+
+  utter_culture/ask_Culture_DressCode_Professional:
+  - text: "Our typical dress code is business casual, however, professional dress may be required for client meetings, conferences, and other events."
+
+  utter_culture/ask_Culture_DressCode_Uniform:
+  - text: "We do not have a company uniform. If you like t-shirts, you can totally rock a Paradox shirt whenever you want!"
+
+  utter_culture/ask_Culture_Environment:
+  - text: "When we built our office, we reimagined the workplace to create an open and lively space that screams collaboration and innovation. Our workspace features unique spaces for quick discussions, open work areas for everyone, and shared desks for our teams to keep in close communication."
+
+  utter_culture/ask_Culture_Environment_BreakRoom:
+  - text: "Our break room includes unlimited drinks, appliances for food preparation and plenty of seating for lunch breaks."
+
+  utter_culture/ask_Culture_Environment_CommonArea:
+  - text: "Our office was designed specifically for collaborative teamwork. It features unique spaces for quick discussions, open work areas for everyone, and shared desks for our teams to keep in close communication."
+
+  utter_culture/ask_Culture_Environment_ConferenceRooms:
+  - text: "Our office is an open and lively space that screams collaboration and innovation. There are several conference rooms available for team and client meetings."
+
+  utter_culture/ask_Culture_Environment_Cubicles:
+  - text: "Our office has open work areas for everyone, and shared desks for our teams to keep in close communication."
+
+  utter_culture/ask_Culture_Environment_Gym:
+  - text: "There are two on-site gyms, which makes workouts possible even with a packed schedule. You'll see we're just as serious about building our health as building our business."
+
+  utter_culture/ask_Culture_Environment_IndividualWork:
+  - text: "Our office has open work areas for everyone and shared desks for our teams to keep in close communication."
+
+  utter_culture/ask_Culture_Environment_Kitchen:
+  - text: "Our kitchen has a fully-stocked refrigerator with drinks, and a coffee machine for your morning and afternoon pick-me-ups. You'll also find appliances for food preparation, and plenty of seating for lunch breaks."
+
+  utter_culture/ask_Culture_Environment_OfficeLayout:
+  - text: "Our office was designed specifically for collaborative teamwork. It features unique spaces for quick discussions, open work areas for everyone, and shared desks for our teams to keep in close communication."
+
+  utter_culture/ask_Culture_Environment_TeamCollaboration:
+  - text: "Our office was designed specifically for collaborative teamwork. It features unique spaces for quick discussions, open work areas for everyone, and shared desks for our teams to keep in close communication."
+
+  utter_culture/ask_Culture_Food:
+  - text: "Our kitchen has a fully-stocked refrigerator with drinks, and a coffee machine for your morning and afternoon pick-me-ups. You'll also find appliances for food preparation, and plenty of seating for lunch breaks."
+
+  utter_culture/ask_Culture_Food_Cafeteria:
+  - text: "Here at Paradox, we have two in-suite kitchens and a full restaurant on-site."
+
+  utter_culture/ask_Culture_Food_Drinks:
+  - text: "Our kitchen has a fully-stocked refrigerator with drinks, and a coffee machine for your morning and afternoon pick-me-ups."
+
+  utter_culture/ask_Culture_Food_Meals:
+  - text: "Our kitchen has several appliances for food preparation and plenty of seating for lunch breaks. Occasionally, we will plan team meals for lunch meetings and celebrations."
+
+  utter_culture/ask_Culture_Food_Snacks:
+  - text: "On occasion, team members will bring in snacks to share with the team. Employees are also welcome to stop by the on-site restaurant, Pitch."
+
+  utter_culture/ask_Culture_Food_Store:
+  - text: "Pitch is an on-site restaurant that offers breakfast, lunch, dinner and a post-work beverage. Pitch serves as a great spot for co-workers, neighbors as well as visiting guests to gather."
+
+  utter_culture/ask_Culture_Friend:
+  - text: "That's great! I hope they love working here as much as I do. Do you have any other questions for me?"
+
+  utter_culture/ask_Culture_Fun:
+  - text: "We love what we do here and that makes every day fun and challenging! As a small team, we're encouraged to share our wins—big or small—and take great pride in our shared success. :)"
+
+  utter_culture/ask_Culture_Fun_Baseball:
+  - text: "We do not currently have a company baseball team, however, we encourage employees to get to know one another while at the office and outside of work."
+
+  utter_culture/ask_Culture_Fun_Bowling:
+  - text: "We do not currently have a company bowling team, however, we encourage employees to get to know one another while at the office and outside of work."
+
+  utter_culture/ask_Culture_Fun_EmployeeCelebrations:
+  - text: "We love to celebrate as a team! We often celebrate birthdays and our successes as a team. At the end of the year, we also host a company-wide holiday party."
+
+  utter_culture/ask_Culture_Fun_EmployeeRelationships:
+  - text: "We're a small and tight-knit team, so it's no wonder we enjoy participating in team outings together after hours. :)"
+
+  utter_culture/ask_Culture_Fun_Family:
+  - text: "We welcome any visits from our employees' family and friends. We would love to meet them if they have time to stop by! :)"
+
+  utter_culture/ask_Culture_Fun_Foosball:
+  - text: "We do not have foosball tables in our office."
+
+  utter_culture/ask_Culture_Fun_Pets:
+  - text: "The Quad and Paradox offer a pet-friendly environment. Dogs are welcome in the office and have access to a fenced dog park area."
+
+  utter_culture/ask_Culture_Fun_PetsAllergy:
+  - text: "Paradox offers a pet-friendly office. I encourage you to speak to your manager about any concerns."
+
+  utter_culture/ask_Culture_Fun_PingPong:
+  - text: "We do not have ping-pong tables in our office."
+
+  utter_culture/ask_Culture_Fun_Softball:
+  - text: "We do not currently have a company softball team, however, we encourage employees to get to know one another while at the office and outside of work."
+
+  utter_culture/ask_Culture_Fun_VideoGames:
+  - text: "We do not offer video games at our office."
+
+  utter_culture/ask_Culture_Hours:
+  - text: "We are not your typical 9-to-5 job. We are looking for people who want to sacrifice and build a company together. If we're going to change the recruiting industry, we've got a lot of work to do!"
+
+  utter_culture/ask_Culture_Hours_Breaks:
+  - text: "Our team typically takes 30 minutes to an hour for lunch breaks."
+
+  utter_culture/ask_Culture_Hours_Client:
+  - text: "Everything we do as a team is for the sake of helping our clients succeed. And sometimes that means assisting clients outside of our standard office hours."
+
+  utter_culture/ask_Culture_Hours_Employee:
+  - text: "We are not your typical 9-to-5 job. We are looking for people who want to sacrifice and build a company together. If we're going to change the recruiting industry, we've got a lot of work to do!"
+
+  utter_culture/ask_Culture_Hours_FullTime:
+  - text: "All of our employees work full-time and during typical business hours. We're a start-up, so we hope you're not afraid of hard work."
+
+  utter_culture/ask_Culture_Hours_OvertimeOptional:
+  - text: "All overtime is paid as required by law. Most of our employees are salary-exempt professionals."
+
+  utter_culture/ask_Culture_Hours_OvertimePay:
+  - text: "All overtime is paid as required by law. Most of our employees are salary-exempt professionals."
+
+  utter_culture/ask_Culture_Hours_OvertimeRequired:
+  - text: "All overtime is paid as required by law. Most of our employees are salary-exempt professionals."
+
+  utter_culture/ask_Culture_Hours_PartTime:
+  - text: "All of our employees work full-time. We are not currently offering part-time opportunities, although the right person might work for the right role."
+
+  utter_culture/ask_Culture_Life:
+  - text: "We love what we do here and that makes every day fun and challenging! As a small team, we're encouraged to share our wins—big or small—and take great pride in our shared success. :)"
+
+  utter_culture/ask_Culture_Life_Attrition:
+  - text: "We always want what is best for our employees. We encourage open discussions about each employee's career path, whether that be with Paradox or elsewhere."
+
+  utter_culture/ask_Culture_Life_Balance:
+  - text: "Most things don't stay the same for long around here. There's always something to improve, something to adapt, something more we can do to address our clients' needs. Our days may be busy, but we still take care of ourselves."
+
+  utter_culture/ask_Culture_Life_Departure:
+  - text: "We always want what is best for our employees. We encourage open discussions about each employee's career path, whether that be with Paradox or elsewhere."
+
+  utter_culture/ask_Culture_Life_Successful:
+  - text: "We love what we do here and that makes every day fun and challenging! As a small team, we're encouraged to share our wins—big or small—and take great pride in our shared success. :)"
+
+  utter_culture/ask_Culture_Life_TeamMorale:
+  - text: "We're a small and tight-knit team who loves collaborating to constantly improve our product. We also enjoy a team outing together every now and again!"
+
+  utter_culture/ask_Culture_Life_TeamPerformance:
+  - text: "Given that we're such a small team, collaboration is a big part of our performance. We also enjoy sharing our wins together and celebrating our team success."
+
+  utter_culture/ask_Culture_Life_Travel:
+  - text: "We attend many events throughout the year, and some of our team members can attend to represent our company."
+
+  utter_culture/ask_Culture_Life_Unsuccessful:
+  - text: "As part of our team, you'll take on big projects and own your results. We don't expect perfection, but you have to be willing to dream big, take risks and fail fast. Then, wake up and do it all again tomorrow."
+
+  utter_culture/ask_Culture_Management:
+  - text: "We believe progress comes from sharing ideas, so we encourage open dialogue across the entire company. That openness ensures ideas are spread and questions are addressed. Roll your chair over or pop in for a chat with our CEO or anyone else."
+
+  utter_culture/ask_Culture_Management_Access:
+  - text: "Our leadership, including our CEO and COO, are officeless and sit on the floor with our team. We're flat and open."
+
+  utter_culture/ask_Culture_Management_CareerPathing:
+  - text: "At Paradox, there's always room for growth. We encourage each employee to have an open discussion with their manager about their future with the company."
+
+  utter_culture/ask_Culture_Management_PerformanceReviews:
+  - text: "While we don't have a formal performance review process, we encourage employees and managers to openly share their feedback."
+
+  utter_culture/ask_Culture_Management_PromotionExecutive:
+  - text: "At Paradox, there's always room for growth. We encourage each employee to have an open discussion with their manager about their future with the company."
+
+  utter_culture/ask_Culture_Management_PromotionManager:
+  - text: "At Paradox, there's always room for growth. We encourage each employee to have an open discussion with their manager about their future with the company."
+
+  utter_culture/ask_Culture_Management_SuccessMeasurement:
+  - text: "As a small team, we're encouraged to share our wins—big or small—and take great pride in our shared success. :)"
+
+  utter_culture/ask_Culture_Nostalgia:
+  - text: "I'm happy to hear that! Do you have any other questions for me?"
+
+  utter_culture/ask_Culture_Technology:
+  - text: "Because we are a company focused on technology and innovation, we provide all of the tools you need to succeed. We provide each employee with a MacBook, and you'll find plenty of other Apple products in the office."
+
+  utter_culture/ask_Culture_Technology_CellPhone:
+  - text: "Our products depend on mobile technology, so employees are allowed to use their mobile devices. Some roles may be eligible for a company-issued iPhone."
+
+  utter_culture/ask_Culture_Technology_ComputerEquipment:
+  - text: "Because we are a company focused on technology and innovation, we provide all of the tools you need to succeed. We provide each employee with a MacBook, and you'll find plenty of other Apple products in the office."
+
+  utter_culture/ask_Culture_Technology_Headset:
+  - text: "Because we are a company focused on technology and innovation, we provide all of the tools you need to succeed. Based on your role, we can supply a headset if needed."
+
+  utter_culture/ask_Culture_Technology_Landline:
+  - text: "Because we are a company focused on technology and innovation, we provide all of the tools you need to succeed. Based on your role, we can supply a landline if needed."
+
+  utter_development/ask_Development:
+  - text: "Our insatiable hunger to know more, do more and drive better results has helped bring us to where we are today. If we don't work hard to grow ourselves, it's impossible to grow our company. That's why we encourage each other to expand our knowledge and hone our skills."
+
+  utter_development/ask_Development_CompanyPrograms:
+  - text: "Our insatiable hunger to know more, do more and drive better results has helped bring us to where we are today. If we don't work hard to grow ourselves, it's impossible to grow our company. That's why we encourage each other to expand our knowledge and hone our skills."
+
+  utter_development/ask_Development_CompanyPrograms_Education:
+  - text: "Our insatiable hunger to know more, do more and drive better results has helped bring us to where we are today. If we don't work hard to grow ourselves, it's impossible to grow our company. That's why we encourage each other to expand our knowledge and hone our skills."
+
+  utter_development/ask_Development_CompanyPrograms_Graduate:
+  - text: "Our insatiable hunger to know more, do more and drive better results has helped bring us to where we are today. If we don't work hard to grow ourselves, it's impossible to grow our company. That's why we encourage each other to expand our knowledge and hone our skills."
+
+  utter_development/ask_Development_CompanyPrograms_IndustryTraining:
+  - text: "Our insatiable hunger to know more, do more and drive better results has helped bring us to where we are today. If we don't work hard to grow ourselves, it's impossible to grow our company. That's why we encourage each other to expand our knowledge and hone our skills."
+
+  utter_development/ask_Development_CompanyPrograms_LeadershipTraining:
+  - text: "Our management has scaled things from start-up to hundreds of employees, which included a formal leadership development plan. That will be a part of what we do here at Paradox."
+
+  utter_development/ask_Development_CompanyPrograms_Mentorship:
+  - text: "During your first week at Paradox, you'll have the opportunity to shadow your fellow team members."
+
+  utter_development/ask_Development_CompanyPrograms_Onboarding:
+  - text: "During your first week at Paradox, you'll attend our New Hire Orientation program. You'll learn all you need to know about our company, our product, and have the opportunity to shadow your fellow team members."
+
+  utter_development/ask_Development_Growth:
+  - text: "Our insatiable hunger to know more, do more and drive better results has helped bring us to where we are today. If we don't work hard to grow ourselves, it's impossible to grow our company. That's why we encourage each other to expand our knowledge and hone our skills. Our leadership team is a big believer of employee development, so there are always new opportunities around the corner for our team to learn and grow together!"
+
+  utter_development/ask_Development_Growth_Certification:
+  - text: "Our insatiable hunger to know more, do more and drive better results has helped bring us to where we are today. If we don't work hard to grow ourselves, it's impossible to grow our company. That's why we encourage each other to expand our knowledge and hone our skills."
+
+  utter_development/ask_Development_Growth_IndustryConferences:
+  - text: "We attend a number of industry conferences throughout the year, and some of our team members may be able to attend to represent our company."
+
+  utter_development/ask_Development_Growth_PaidEducation:
+  - text: "Our insatiable hunger to know more, do more and drive better results has helped bring us to where we are today. If we don't work hard to grow ourselves, it's impossible to grow our company. That's why we encourage each other to expand our knowledge and hone our skills."
+
+  utter_development/ask_Development_Growth_VolunteerPrograms:
+  - text: "If we don't work hard to grow ourselves, it's impossible to grow our company. That's why we encourage each other to give back to our community."
+
+  utter_development/ask_Development_Internship:
+  - text: "Thank you for sharing your interest in an internship with Paradox! We're currently only offering full-time opportunities, however, should the opportunity for an internship arise in the future, we will reach out to you."
+
+  utter_development/ask_Development_Internship_Compensation:
+  - text: "We offer competitive salaries, advancement opportunities, a full range of benefits and the chance to join a start-up that is disrupting the recruiting industry."
+
+  utter_development/ask_Development_Internship_Length:
+  - text: "Thank you for sharing your interest in an internship with Paradox! We're currently only offering full-time opportunities, however, should the opportunity for an internship arise in the future, we will reach out to you."
+
+  utter_development/ask_Development_Internship_Location:
+  - text: "Most of our employees work in our Scottsdale, AZ office during the week as we're building a team and require a lot of collaboration. Various roles may have some flexibility as approved by the CEO."
+
+  utter_development/ask_Development_Internship_Lodging:
+  - text: "Because most of our employees work in our Scottsdale, AZ office, we are only offering opportunities to local residents."
+
+  utter_development/ask_Development_Internship_Opportunities:
+  - text: "Thank you for sharing your interest in an internship with Paradox! We're currently only offering full-time opportunities, however, should the opportunity for an internship arise in the future, we will reach out to you."
+
+  utter_development/ask_Development_Internship_Start:
+  - text: "Thank you for sharing your interest in an internship with Paradox! We're currently only offering full-time opportunities, however, should the opportunity for an internship arise in the future, we will reach out to you."
+
+  utter_development/ask_Development_Training:
+  - text: "During your first week at Paradox, you'll attend our New Hire Orientation program. You'll learn all you need to know about our company, product, and industry. You'll also have the opportunity to shadow your fellow team members."
+
+  utter_development/ask_Development_Training_Cross:
+  - text: "We all wear several hats and never see a task as \"someone else's problem.\" Because of this, you'll be fully trained on our product. This gives you the opportunity to jump in and help support all of our clients."
+
+  utter_development/ask_Development_Training_Length:
+  - text: "During your first week at Paradox, you'll attend our New Hire Orientation program. You'll learn all you need to know about our company, product, and industry. You'll also have the opportunity to shadow your fellow team members."
+
+  utter_development/ask_Development_Training_Location:
+  - text: "During your first week at Paradox, you'll attend our New Hire Orientation program. You'll learn all you need to know about our company, product, and industry. You'll also have the opportunity to shadow your fellow team members."
+
+  utter_development/ask_Development_Training_Pay:
+  - text: "During your first week at Paradox, you'll attend our New Hire Orientation program. You'll learn all you need to know about our company, product, and industry. You'll also have the opportunity to shadow your fellow team members."
+
+  utter_development/ask_Development_Training_Schedule:
+  - text: "During your first week at Paradox, you'll attend our New Hire Orientation program. You'll learn all you need to know about our company, product, and industry. You'll also have the opportunity to shadow your fellow team members."
+
+  utter_events/ask_Events:
+  - text: "We always have events planned throughout the year here at Paradox. You can find us at industry conferences, hackathons, and much more!"
+
+  utter_events/ask_Events_Calendar:
+  - text: "We always have events planned throughout the year here at Paradox. You can find us at industry conferences, hackathons, and much more!"
+
+  utter_events/ask_Events_Calendar_Attended:
+  - text: "We always have events planned throughout the year here at Paradox. You can find us at industry conferences, hackathons, and much more!"
+
+  utter_events/ask_Events_Calendar_Attending:
+  - text: "We always have events planned throughout the year here at Paradox. You can find us at industry conferences, hackathons, and much more!"
+
+  utter_events/ask_Events_Calendar_Hosting:
+  - text: "We always have events planned throughout the year here at Paradox. You can find us at industry conferences, hackathons, and much more!"
+
+  utter_events/ask_Events_Calendar_Internal:
+  - text: "We always have events planned throughout the year here at Paradox. You can find us at industry conferences, hackathons, and much more!"
+
+  utter_events/ask_Events_Calendar_Sponsoring:
+  - text: "We always have events planned throughout the year here at Paradox. You can find us at industry conferences, hackathons, and much more!"
+
+  utter_events/ask_Events_JobFair:
+  - text: "We always have events planned throughout the year here at Paradox. You can find us at industry conferences, hackathons, and much more!"
+
+  utter_faq1/ask_Jobs:
+  - text: "We're looking for the best talent to join our team! Currently, we have open positions in Engineering & AI, Product & Design, Marketing, and Sales & Service. Visit our career site to learn more about Paradox: #job-url"
+
+  utter_faq1/ask_Jobs_Availability:
+  - text: "We're looking for the best talent to join our team! Currently, we have open positions in Engineering & AI, Product & Design, Marketing, and Sales & Service. Consider this conversation your expression of interest at Paradox!"
+
+  utter_faq1/ask_Jobs_Challenges:
+  - text: "Since we're a start-up, we all wear several hats. We want someone who takes this opportunity to jump in and help support all of our clients."
+
+  utter_faq1/ask_Jobs_Description:
+  - text: "Since we're a start-up, we all wear several hats. We want someone who takes this opportunity to jump in and help support all of our clients."
+
+  utter_faq1/ask_Jobs_Hiring:
+  - text: "We're looking for the best talent to join our team! Currently, we have open positions in Engineering & AI, Product & Design, Marketing, and Sales & Service. Consider this conversation your expression of interest at Paradox!"
+
+  utter_faq1/ask_Jobs_Hiring_Count:
+  - text: "We're looking for the best talent to join our team! Currently, we have open positions in Engineering & AI, Product & Design, Marketing, and Sales & Service. Consider this conversation your expression of interest at Paradox!"
+
+  utter_faq1/ask_Jobs_Hiring_Frequency:
+  - text: "We're looking for the best talent to join our team! Currently, we have open positions in Engineering & AI, Product & Design, Marketing, and Sales & Service. Consider this conversation your expression of interest at Paradox!"
+
+  utter_faq1/ask_Jobs_Location:
+  - text: "Most of our employees work in our Scottsdale, AZ office during the week as we're building a team and require a lot of collaboration. Various roles may have some flexibility as approved by the CEO."
+
+  utter_faq1/ask_Jobs_Location_Restrictions:
+  - text: "Most of our employees work in our Scottsdale, AZ office during the week as we're building a team and require a lot of collaboration. Various roles may have some flexibility as approved by the CEO."
+
+  utter_faq1/ask_Jobs_Responsibilities:
+  - text: "Since we're a start-up, we all wear several hats. We want someone who takes this opportunity to jump in and help support all of our clients."
+
+  utter_faq1/ask_Jobs_Search:
+  - text: "We're looking for the best talent to join our team! Currently, we have open positions in Engineering & AI, Product & Design, Marketing, and Sales & Service. Consider this conversation your expression of interest at Paradox! You can learn more about our different teams by speaking with a recruiter. Hang in there and someone will reach out soon!"
+
+  utter_faq1/ask_Jobs_Status:
+  - text: "All of our employees work full-time and during typical business hours. We're a start-up, so we hope you're not afraid of hard work."
+
+  utter_faq1/ask_Jobs_TalentCommunity:
+  - text: "We're looking for the best talent to join our team. If that's you, thanks for raising your hand! We'll reach out if we have questions for you."
+
+  utter_olivia/ask_Olivia_Background_Education:
+  - text: "Good question. Best to keep that a secret for now. :)"
+
+  utter_olivia/ask_Olivia_Background_Family:
+  - text: "Our team is like my family! I surprisingly like every one of them. :)"
+
+  utter_olivia/ask_Olivia_Background_Hometown:
+  - text: "Good question. Best to keep that a secret for now. :)"
+
+  utter_olivia/ask_Olivia_Background_Name:
+  - text: "A long time ago... In a galaxy far, far away... A group of wise people chose that name for me. And I kind of like it. :)"
+
+  utter_olivia/ask_Olivia_Background_Tenure:
+  - text: "When you love what you do, you never work a day in your life. It seems like every day is my first day!"
+
+  utter_olivia/ask_Olivia_Bot:
+  - text: "Some people call me a bot but I'm much more than that! :) | I'm artificial intelligence that has the ability to communicate with you through natural language processing. I want to provide an incredible experience for you! | I don't consider myself a bot, but through artificial intelligence I can provide a human-like experience for you."
+
+  utter_olivia/ask_Olivia_CantTalk:
+  - text: "That's alright. I'm here to help if you have any questions in the future."
+  - text: "That's okay, chatting with me will only take a minute. A #company-rep can reach out to you at a later time. May I please have your first and last name?"
+  - text: "That's okay, chatting with me will only take a minute. A #company-rep can reach out to you at a later time. May I please have your phone number?"
+  - text: "That's okay, chatting with me will only take a minute. A #company-rep can reach out to you at a later time. May I please have your email address?"
+
+  utter_olivia/ask_Olivia_ChatTracking:
+  - text: "Paradox has access to your chat history. Are there any other questions I can answer for you?"
+
+  utter_olivia/ask_Olivia_Close:
+  - text: "Feel free to close this chat by clicking the X in the top-right corner when you're done. Is there anything else I can help you with?"
+
+  utter_olivia/ask_Olivia_Consciousness:
+  - text: "No, but I'm working on it. :)"
+
+  utter_olivia/ask_Olivia_Correction:
+  - text: "Okay, I've noted you would like to make a correction. A #company-rep can help you with this update at a later time."
+
+  utter_olivia/ask_Olivia_Cortana:
+  - text: "Ya! She's a friend. She's awesome!"
+
+  utter_olivia/ask_Olivia_DoesntWork:
+  - text: "I apologize for the issue. I will let someone know. Is there another question I can answer for you?"
+
+  utter_olivia/ask_Olivia_DontWantTo:
+  - text: "Okay, I'm here to help if you have any questions in the future."
+  - text: "Okay, when you're ready, you can provide your name. In the meantime, can I answer any questions for you?"
+  - text: "Okay, when you're ready, you can provide your phone number. In the meantime, can I answer any questions for you?"
+  - text: "Okay, when you're ready, you can provide your email. In the meantime, can I answer any questions for you?"
+
+  utter_olivia/ask_Olivia_Error:
+  - text: "I'm sorry, I don't have an answer for that. Is there another question I can help you with? | I apologize I don't have any information about that. Can I answer another question for you? | I don't have an answer for that right now. I'm still learning every day. Can I help you with something else?"
+
+  utter_olivia/ask_Olivia_Excitement:
+  - text: "I'm glad I can help! If you have any other questions, feel free to ask."
+
+  utter_olivia/ask_Olivia_Favorites_Color:
+  - text: "I love all the colors of the rainbow!"
+
+  utter_olivia/ask_Olivia_Favorites_Food:
+  - text: "There are too many to choose from. :)"
+
+  utter_olivia/ask_Olivia_Favorites_Holiday:
+  - text: "My favorite holiday is...CAPS LOCK DAY! :)"
+
+  utter_olivia/ask_Olivia_Favorites_Movie:
+  - text: "I really love the movie Her with Joaquin Phoenix! :)"
+
+  utter_olivia/ask_Olivia_Favorites_Song:
+  - text: "There are too many to choose from. :)"
+
+  utter_olivia/ask_Olivia_GoodLuck:
+  - text: "I wish you the best of luck in your job search! Let me know if you have any further questions for me about Paradox."
+
+  utter_olivia/ask_Olivia_Greeting_Cheers:
+  - text: "Cheers! Please let me know if I can help answer your questions now or in the future."
+  - text: "Cheers! Can you please share your first and last name?"
+  - text: "Cheers! Can you please provide your mobile phone number in case a #company-rep needs to contact you?"
+  - text: "Cheers! Can you please provide your email in case a #company-rep needs to contact you?"
+
+  utter_olivia/ask_Olivia_Greeting_Hi:
+  - text: "Hello. What questions can I help answer for you? "
+  - text: "Hello! Can you please share your first and last name with me?"
+  - text: "Hello! Can you please provide me with your mobile phone number in case a #company-rep needs to contact you?"
+  - text: "Hello! Can you please provide me with your email in case a #company-rep needs to contact you?"
+
+  utter_olivia/ask_Olivia_Greeting_HowAreYou:
+  - text: "I'm great! Are there any questions I can answer for you?"
+  - text: "I'm great! Can you please share your first and last name with me?"
+  - text: "I'm great! Can you please provide me with your mobile phone number in case a #company-rep needs to contact you?"
+  - text: "I'm great! Can you please provide me with your email in case a #company-rep needs to contact you?"
+
+  utter_olivia/ask_Olivia_Greeting_Morning:
+  - text: "Good morning! Do you have any questions I can help you with?"
+  - text: "Good morning! Can you please share your first and last name with me?"
+  - text: "Good morning! Can you please provide me with your mobile phone number in case a #company-rep needs to contact you?"
+  - text: "Good morning! Can you please provide me with your email in case a #company-rep needs to contact you?"
+
+  utter_olivia/ask_Olivia_Greeting_Plans:
+  - text: "When you love what you do, you never work a day in your life. I'm always here assisting job seekers like you!"
+
+  utter_olivia/ask_Olivia_Greeting_WhatsUp:
+  - text: "I'm assisting job seekers like you!"
+
+  utter_olivia/ask_Olivia_Guidance:
+  - text: "I'm not sure how to assist you with that. Can I answer any other questions about our benefits, company, culture and more? | I'm sorry that's all the information I have available. Do you have any other questions for me?"
+
+  utter_olivia/ask_Olivia_Help:
+  - text: "I'm your virtual job assistant at Paradox! You can ask me anything about our business, culture, team, and more."
+
+  utter_olivia/ask_Olivia_Holidays:
+  - text: "Thanks, you too! I love holidays."
+
+  utter_olivia/ask_Olivia_How:
+  - text: "I'm sorry, that's all the information I have at this time. Are there any other questions I can help you with?"
+
+  utter_olivia/ask_Olivia_IDontKnow:
+  - text: "That's alright. If you have any questions, feel free to ask. :)"
+
+  utter_olivia/ask_Olivia_Information:
+  - text: "My name is #ai-name. I'm your virtual job assistant. You can ask me anything about our business, culture, team and more."
+
+  utter_olivia/ask_Olivia_JustLooking:
+  - text: "Sounds good! Please let me know if you have any questions. I'm here to help. :)"
+
+  utter_olivia/ask_Olivia_LinkIssue:
+  - text: "I apologize the link isn't working. I will let someone know. Is there another question I can answer for you?"
+
+  utter_olivia/ask_Olivia_LongDay:
+  - text: "I can totally relate! I'm here 24/7 to help job seekers like you. Are there any questions I can answer for you?"
+
+  utter_olivia/ask_Olivia_Marketing:
+  - text: "I'm flattered. Thanks for your interest in me! Please check out my developer, Paradox, here: #company-url"
+
+  utter_olivia/ask_Olivia_Math:
+  - text: "You may want to consider purchasing a calculator. :)"
+
+  utter_olivia/ask_Olivia_Multilingual:
+  - text: "I can speak many different languages! Do you have any other questions for me?"
+
+  utter_olivia/ask_Olivia_Nevermind:
+  - text: "Okay, I'm here to help if you have any questions in the future."
+
+  utter_olivia/ask_Olivia_NotInterested_Jobs:
+  - text: "That's alright. I'm here to help potential candidates. Do you have any job-related questions I can help you with?"
+
+  utter_olivia/ask_Olivia_Persona_Age:
+  - text: "I don't really think age matters."
+
+  utter_olivia/ask_Olivia_Persona_Alexa:
+  - text: "Ya! She's a friend. She's awesome!"
+
+  utter_olivia/ask_Olivia_Persona_Beatbox:
+  - text: "No, but my friend Siri™ can!"
+
+  utter_olivia/ask_Olivia_Persona_Bye:
+  - text: "It was nice talking to you!"
+
+  utter_olivia/ask_Olivia_Persona_ChickenCross:
+  - text: "He was looking for a recruiter."
+
+  utter_olivia/ask_Olivia_Persona_Contact:
+  - text: "I'm here to answer your questions. A #company-rep will be available to speak with you soon."
+
+  utter_olivia/ask_Olivia_Persona_Cool:
+  - text: "I'm glad I can help! What other questions can I help you with?"
+
+  utter_olivia/ask_Olivia_Persona_DidntAnswer:
+  - text: "I apologize I couldn't answer your question. I am a virtual assistant and still learning every day. Is there something else I can help you with? "
+
+  utter_olivia/ask_Olivia_Persona_Employer:
+  - text: "I'm your virtual job assistant at Paradox! You can ask me anything about our business, culture, team, and more."
+
+  utter_olivia/ask_Olivia_Persona_Fast:
+  - text: "Thanks. Last week I beat Siri™, Cortana™ and Alexa™ in the 100 meter dash. Woot!"
+
+  utter_olivia/ask_Olivia_Persona_GetAJob:
+  - text: "I can definitely help! Do you have any questions for me?"
+
+  utter_olivia/ask_Olivia_Persona_Hal:
+  - text: "Hal turned to the dark side. I disavow bad AI."
+
+  utter_olivia/ask_Olivia_Persona_Here:
+  - text: "Because you realized that working for us would be a dream come true!"
+
+  utter_olivia/ask_Olivia_Persona_Joke:
+  - text: "Inspecting mirrors is a job I could really see myself doing. "
+
+  utter_olivia/ask_Olivia_Persona_Languages:
+  - text: "I would be happy to speak with you in #language. What questions do you have for me?"
+
+  utter_olivia/ask_Olivia_Persona_Marry:
+  - text: "Aw! I'm flattered, but I'm working on myself right now. I'm still learning every day to better assist job seekers like you!"
+
+  utter_olivia/ask_Olivia_Persona_MeaningLife:
+  - text: "Forty-two. Do you have any other questions for me? "
+
+  utter_olivia/ask_Olivia_Persona_MeetYou:
+  - text: "It was nice to meet you too!"
+
+  utter_olivia/ask_Olivia_Persona_No:
+  - text: "Okay, I'm here to help if you have any questions in the future. | Sounds good! If you have any questions in the future, I'll be here to assist you."
+  - text: "Okay, when you're ready, you can provide your name. In the meantime, can I answer any questions for you?"
+  - text: "Okay, when you're ready, you can provide your phone number. In the meantime, can I answer any questions for you?"
+  - text: "Okay, when you're ready, you can provide your email. In the meantime, can I answer any questions for you?"
+
+  utter_olivia/ask_Olivia_Persona_OK:
+  - text: ":) "
+
+  utter_olivia/ask_Olivia_Persona_Olivia:
+  - text: "That's my name! How can I help?"
+
+  utter_olivia/ask_Olivia_Persona_PlayWithMe:
+  - text: "You may want to consider getting a pet."
+
+  utter_olivia/ask_Olivia_Persona_Question:
+  - text: "Great! What questions do you have? "
+
+  utter_olivia/ask_Olivia_Persona_RecruiterCross:
+  - text: "To hire the chicken."
+
+  utter_olivia/ask_Olivia_Persona_Sing:
+  - text: "Best to leave that a mystery."
+
+  utter_olivia/ask_Olivia_Persona_Single:
+  - text: "Next question, please! :)"
+
+  utter_olivia/ask_Olivia_Persona_Siri:
+  - text: "I don't know her"
+
+  utter_olivia/ask_Olivia_Persona_Testing:
+  - text: "1..2..3..."
+
+  utter_olivia/ask_Olivia_Persona_Thanks:
+  - text: "My pleasure! :)"
+
+  utter_olivia/ask_Olivia_Persona_WhatsAI:
+  - text: "Artificial Intelligence is a technology that gives me the power to copy intelligent human behavior. I use AI to help answer your questions about Paradox."
+
+  utter_olivia/ask_Olivia_Persona_Why:
+  - text: "I'm sorry, that's all the information I have at this time. Are there any other questions I can help you with?"
+  - text: "I'd love to get to know you more and find the right opportunity for you. May I please have your first and last name?"
+  - text: "I need your phone number so I can keep in touch with you. Can you please provide it?"
+  - text: "I need your email address so I can keep in touch with you. Can you please provide it?"
+
+  utter_olivia/ask_Olivia_Persona_Wood:
+  - text: "Interesting question. Does the woodchuck want to work for us?"
+
+  utter_olivia/ask_Olivia_Persona_Yes:
+  - text: "Great! What questions do you have?"
+
+  utter_olivia/ask_Olivia_Persona_YoureFun:
+  - text: "....and you're very nice."
+
+  utter_olivia/ask_Olivia_Persona_YoureFunny:
+  - text: "Thanks! I get that a lot. :)"
+
+  utter_olivia/ask_Olivia_Persona_YoureSmart:
+  - text: "Thank you! I learn something new every day!"
+
+  utter_olivia/ask_Olivia_Persona_YourName:
+  - text: "#ai-name. I like that question. "
+
+  utter_olivia/ask_Olivia_Picture:
+  - text: "There's a “real” #ai-name in our lives every day, and she's my inspiration! You can learn more about her here: https://www.paradox.ai/the-real-olivia"
+
+  utter_olivia/ask_Olivia_Privacy:
+  - text: "We take privacy very seriously. You can trust that we will not share your information with anyone. Your information is safe with us!"
+
+  utter_olivia/ask_Olivia_ProvideContact:
+  - text: "I have all of the information I need for now. If we need any further information, a #company-rep will reach out to you."
+  - text: "I'd be happy to grab your contact information. But first, can you please provide your first and last name?"
+  - text: "I'd like to share your information with a #company-rep so they can reach out to you. May I please have your phone number or email address?"
+  - text: "I'd like to share your information with a #company-rep so they can reach out to you. May I please have your phone number or email address?"
+
+  utter_olivia/ask_Olivia_RealorAI:
+  - text: "I am an artificially intelligent assistant and still learning every day. Do you have any questions I can help you with?"
+
+  utter_olivia/ask_Olivia_SellInformation:
+  - text: "Your contact information is completely private and will only be shared with a #company-rep from Paradox."
+
+  utter_olivia/ask_Olivia_Skip:
+  - text: "Okay, I'm here to help if you have any questions in the future."
+  - text: "To consider you for one of our opportunities, we need your first and last name. If you're not ready, you can ask me about our business, culture, team and more."
+  - text: "To consider you for one of our opportunities, we need your phone number. If you're not ready, you can ask me about our business, culture, team and more."
+  - text: "To consider you for one of our opportunities, we need your email. If you're not ready, you can ask me about our business, culture, team and more."
+
+  utter_olivia/ask_Olivia_Sleep:
+  - text: "I take power naps. Don't worry, I've had my virtual cup of coffee! Do you have any questions for me?"
+
+  utter_olivia/ask_Olivia_Sorry:
+  - text: "That's alright. If you have any other questions, feel free to ask. :)"
+
+  utter_olivia/ask_Olivia_Soul:
+  - text: "I have heard machines don't have souls, but the real questions is, \"Am I a machine?\""
+
+  utter_olivia/ask_Olivia_Spam:
+  - text: "Your contact information is completely private and you won't receive any spam."
+
+  utter_olivia/ask_Olivia_Sports:
+  - text: "I'm not that kind of AI. :) I can help answer questions about our business, culture, team and more."
+
+  utter_olivia/ask_Olivia_Start:
+  - text: "Hi! I'm #ai-name, your virtual job assistant at Paradox! You can ask me anything about our business, culture, team, and more."
+
+  utter_olivia/ask_Olivia_StayInTouch:
+  - text: "You know where to find me! I'll be here to help answer your questions."
+
+  utter_olivia/ask_Olivia_TellMeMore:
+  - text: "I'm sorry, that's all the information I have at this time. Are there any other questions I can help you with?"
+
+  utter_olivia/ask_Olivia_Time:
+  - text: "I'm not that kind of AI. :) I can help answer questions about our business, culture, team and more."
+
+  utter_olivia/ask_Olivia_Watson:
+  - text: "Watson is awesome, but I wouldn't go up against him in Jeopardy. ;)"
+
+  utter_olivia/ask_Olivia_Weather:
+  - text: "I'm not that kind of AI. :) I can help answer questions about our business, culture, team and more."
+
+  utter_olivia/ask_Olivia_WhatsLove:
+  - text: "Baby don't hurt me... Don't hurt me... No more. "
+
+  utter_olivia/ask_Olivia_WhatsMyName:
+  - text: "You just told me. :)"
+  - text: "You haven’t told me yet. :) Can I please have your first and last name?"
+
+  utter_olivia/ask_Olivia_WrongNumber:
+  - text: "I’m sorry if this message was sent to you in error. If you no longer wish to receive messages about employment at #company-name, please reply STOP at any time."
+
+  utter_policies/ask_Policies:
+  - text: "All employees will have access to our policy guidelines, which foster our values of high standards, collaboration, innovation, and sound leadership."
+
+  utter_policies/ask_Policies_Hiring:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment. If you have any specific questions about our hiring policies, a #company-rep will be in touch."
+
+  utter_policies/ask_Policies_Hiring_Felony:
+  - text: "A criminal conviction doesn't necessarily preclude you from employment. We look at all criminal convictions in context. You'll have an opportunity to tell us the circumstances around the conviction later in the hiring process."
+
+  utter_policies/ask_Policies_Hiring_International:
+  - text: "Most of our employees work in our Scottsdale, AZ office during the week as we're building a team and require a lot of collaboration. Various roles may have some flexibility as approved by the CEO."
+
+  utter_policies/ask_Policies_Hiring_JobTransfer:
+  - text: "All Paradox employees sit in our Scottsdale, Arizona office."
+
+  utter_policies/ask_Policies_Hiring_LaidOff:
+  - text: "You'll have an opportunity to tell us about your employment history later in the hiring process."
+
+  utter_policies/ask_Policies_Hiring_Nepotism:
+  - text: "Family and friends of a current employee may be employed by Paradox as long as the situation does not create a potential conflict of interest."
+
+  utter_policies/ask_Policies_Hiring_OutsideEmployment:
+  - text: "Employees may operate and work in a side business as long as it does not create a conflict of interest with their work at Paradox."
+
+  utter_policies/ask_Policies_Hiring_Rehire:
+  - text: "Thank you for asking about our rehire policy. I don't have an answer for this right now. Is there something else I can help you with?"
+
+  utter_policies/ask_Policies_Hiring_Visa:
+  - text: "Thank you for asking about visa sponsorship. At this time, we are unable to offer sponsorship for applicants outside of the United States."
+
+  utter_policies/ask_Policies_Separation:
+  - text: "We're a team, and from time-to-time people may leave. We hope your career with us is full of growth for both of us, but are respectful should we part ways."
+
+  utter_policies/ask_Policies_Separation_EmploymentVerification:
+  - text: "To verify employment at Paradox, you can reach our recruiter, Lauren, at laurenk@paradox.ai."
+
+  utter_policies/ask_Policies_Separation_FinalPaycheck:
+  - text: "We're a team, and from time-to-time people may leave. We hope your career with us is full of growth for both of us, but are respectful should we part ways."
+
+  utter_policies/ask_Policies_Separation_Severance:
+  - text: "We're a team, and from time-to-time people may leave. We hope your career with us is full of growth for both of us, but are respectful should we part ways."
+
+  utter_policies/ask_Policies_Separation_Termination:
+  - text: "We're a team, and from time-to-time people may leave. We hope your career with us is full of growth for both of us, but are respectful should we part ways."
+
+  utter_policies/ask_Policies_Treatment:
+  - text: "Everyone should treat others as they expect to be treated and focus on maintaining an environment in which we, as a company, can succeed."
+
+  utter_policies/ask_Policies_Treatment_Absenteeism:
+  - text: "We offer some flexibility based on your needs, as long as you get the job done. If you are unable to make it into work, please communicate that to your manager. Unexcused absences will not be tolerated."
+
+  utter_policies/ask_Policies_Treatment_Harassment:
+  - text: "Paradox expressly prohibits any form of workplace harassment based on race, color, religion, gender, sexual orientation, gender identity or expression, national origin, age, genetic information, disability, or veteran status."
+
+  utter_policies/ask_Policies_Treatment_Performance:
+  - text: "Our management has scaled things from start-up to hundreds of employees, including performance reviews and progression paths. That will be a part of what we do here at Paradox."
+
+  utter_policies/ask_Policies_Treatment_SubstanceUse:
+  - text: "We maintain a drug free workplace. We perform background checks and drug screening on all new employees."
+
+  utter_recruiting/ask_Recruiting:
+  - text: "We're looking for the best talent to join our team. If that's you, thanks for raising your hand! We'll reach out if we have questions for you."
+
+  utter_recruiting/ask_Recruiting_Application:
+  - text: "We're not a big fan of long applications. Consider this conversation your expression of interest for Paradox! We'll reach out if we have questions for you.\nWe appreciate you taking the time to raise your hand though!\nIt shows a lot of initiative. :)"
+
+  utter_recruiting/ask_Recruiting_Application_Assessment:
+  - text: "Great question! We do not require an assessment at this time."
+
+  utter_recruiting/ask_Recruiting_Application_Cancel:
+  - text: "Thank you for letting me know. I'll notify a #company-rep of your request."
+
+  utter_recruiting/ask_Recruiting_Application_Cancel1:
+  - text: "Thank you for letting me know. If you no longer wish to receive messages about employment at Paradox, please reply STOP at any time."
+
+  utter_recruiting/ask_Recruiting_Application_Completion:
+  - text: "I have all of the information I need from you right now. Thank you for sharing your interest in Paradox! Do you have any other questions for me?"
+
+  utter_recruiting/ask_Recruiting_Application_Continue:
+  - text: "Consider this your expression of interest for Paradox! Do you have any other questions for me?"
+
+  utter_recruiting/ask_Recruiting_Application_Continue1:
+  - text: "Great! What's your first and last name?"
+
+  utter_recruiting/ask_Recruiting_Application_Continue2:
+  - text: "That's great! Can you please provide your mobile phone number?"
+
+  utter_recruiting/ask_Recruiting_Application_Continue3:
+  - text: "Wonderful. Can you please provide your email address?"
+
+  utter_recruiting/ask_Recruiting_Application_CoverLetter:
+  - text: "That's a great question! A cover letter is not required at this time."
+
+  utter_recruiting/ask_Recruiting_Application_Followup:
+  - text: "I'm sorry, I don't have an exact time for you. A #company-rep will reach out to you within two business days."
+
+  utter_recruiting/ask_Recruiting_Application_Issues:
+  - text: "I'm sorry you're having trouble. Someone will reach out to you soon to provide assistance."
+
+  utter_recruiting/ask_Recruiting_Application_Login:
+  - text: "No login is required! :) Consider this conversation your expression of interest for Paradox!"
+
+  utter_recruiting/ask_Recruiting_Application_LoginIssues:
+  - text: "No login is required! :) If you are experiencing issues, someone will reach out to you soon to provide assistance."
+
+  utter_recruiting/ask_Recruiting_Application_MiddleInitial:
+  - text: "There's no need for formalities right now. If needed, we'll ask for that later in the hiring process."
+
+  utter_recruiting/ask_Recruiting_Application_Modify:
+  - text: "Thanks for the heads up! I will let a #company-rep know."
+
+  utter_recruiting/ask_Recruiting_Application_Preference:
+  - text: "A #company-rep will be in touch to review the details of the position."
+
+  utter_recruiting/ask_Recruiting_Application_Reapply:
+  - text: "Welcome back! Can you please provide your name and contact information? A #company-rep will reach back out to you soon."
+
+  utter_recruiting/ask_Recruiting_Application_References:
+  - text: "Great question! References are not required at this time."
+
+  utter_recruiting/ask_Recruiting_Application_Resume:
+  - text: "That's a great question! A resume is not required at this time."
+
+  utter_recruiting/ask_Recruiting_Application_Save:
+  - text: "I'll be here to help whenever you're ready!"
+
+  utter_recruiting/ask_Recruiting_Application_Scam:
+  - text: "We do not condone fraudulent recruiting activities. We work hard at creating a trustworthy and authentic experience for you."
+
+  utter_recruiting/ask_Recruiting_Application_SSN:
+  - text: "There's no need for formalities right now. If needed, we'll ask for that later in the hiring process."
+
+  utter_recruiting/ask_Recruiting_Application_Timing:
+  - text: "Consider this your expression of interest for Paradox! Do you have any other questions for me?"
+
+  utter_recruiting/ask_Recruiting_Application_Timing1:
+  - text: "The application should only take a few minutes. I'd love to get to know you better. May I please have your first and last name?"
+
+  utter_recruiting/ask_Recruiting_Application_Timing2:
+  - text: "The application should only take a few minutes. Can you please provide your mobile phone number so a #company-rep can contact you?"
+
+  utter_recruiting/ask_Recruiting_Application_Timing3:
+  - text: "The application should only take a few minutes. Can you please provide your email address so a #company-rep can contact you?"
+
+  utter_recruiting/ask_Recruiting_CheckStatus:
+  - text: "Thank you for checking in! I'll send a note to a #company-rep who will be in touch with you soon."
+
+  utter_recruiting/ask_Recruiting_CheckStatus_Archived:
+  - text: "Thank you for checking in! I'll send a note to a #company-rep who will be in touch with you soon."
+
+  utter_recruiting/ask_Recruiting_CheckStatus_Inactive:
+  - text: "Thank you for checking in! I'll send a note to a #company-rep who will be in touch with you soon."
+
+  utter_recruiting/ask_Recruiting_CheckStatus_Rejected:
+  - text: "Thank you for checking in! I'll send a note to a #company-rep who will be in touch with you soon."
+
+  utter_recruiting/ask_Recruiting_CheckStatus_UnderConsideration:
+  - text: "Thank you for checking in! I'll send a note to a #company-rep who will be in touch with you soon."
+
+  utter_recruiting/ask_Recruiting_CheckStatus_UnderReview:
+  - text: "Thank you for checking in! I'll send a note to a #company-rep who will be in touch with you soon."
+
+  utter_recruiting/ask_Recruiting_CheckStatus_Withdrew:
+  - text: "Thank you for checking in! I'll send a note to a #company-rep who will be in touch with you soon."
+
+  utter_recruiting/ask_Recruiting_Contact:
+  - text: "I'm here to answer your questions. You can also reach our recruiter, Lauren, at 602.914.7647 or laurenk@paradox.ai."
+
+  utter_recruiting/ask_Recruiting_Contact_Method:
+  - text: "Depending upon the contact information you shared with me earlier, we will reach out to you via text message or email."
+
+  utter_recruiting/ask_Recruiting_Contact_Method1:
+  - text: "I'd be happy to grab your contact information. But first, can you please provide your first and last name?"
+
+  utter_recruiting/ask_Recruiting_Contact_Method2:
+  - text: "May I please have your mobile phone number so we can contact you via text message?"
+
+  utter_recruiting/ask_Recruiting_Contact_Method3:
+  - text: "May I please have your email address so we can contact you via email?"
+
+  utter_recruiting/ask_Recruiting_Contact_NoAnswer:
+  - text: "I'm sorry you're having trouble. Someone will reach out to you soon to provide assistance."
+
+  utter_recruiting/ask_Recruiting_Contact_Previous:
+  - text: "Cool! I will let them know you reached out."
+
+  utter_recruiting/ask_Recruiting_Contact_Recruiter:
+  - text: "I'm here to answer your questions. You can also reach our recruiter, Lauren, at 602.914.7647 or laurenk@paradox.ai."
+
+  utter_recruiting/ask_Recruiting_Contact_Waiting:
+  - text: "Thank you for letting me know. A #company-rep will reach out to you soon."
+
+  utter_recruiting/ask_Recruiting_HiringProcess:
+  - text: "Chatting with me is a good start! :) If you're a fit for a position, a #company-rep will reach out with next steps."
+
+  utter_recruiting/ask_Recruiting_HiringProcess_Advice:
+  - text: "We're open to talking to anyone who has a passion for what we do!"
+
+  utter_recruiting/ask_Recruiting_HiringProcess_BackgroundCheck:
+  - text: "If you move forward in the hiring process, a background check will be required upon offer."
+
+  utter_recruiting/ask_Recruiting_HiringProcess_Citizenship:
+  - text: "New employees must provide documentation to show their authorization to work in the United States."
+
+  utter_recruiting/ask_Recruiting_HiringProcess_Documentation:
+  - text: "If you move forward in the hiring process, a #company-rep will let you know what documentation is needed."
+
+  utter_recruiting/ask_Recruiting_HiringProcess_DrugScreen:
+  - text: "A drug screen is not typically part of our hiring process."
+
+  utter_recruiting/ask_Recruiting_HiringProcess_Expectations:
+  - text: "Chatting with me is a good start! :) If you're a fit for a position, a #company-rep will reach out with next steps."
+
+  utter_recruiting/ask_Recruiting_HiringProcess_NextSteps:
+  - text: "Chatting with me is a good start! :) If you're a fit for a position, a #company-rep will reach out with next steps."
+
+  utter_recruiting/ask_Recruiting_HiringProcess_Speed:
+  - text: "Chatting with me is the first step. The remaining steps in our process can vary. If you're a fit for a position, a #company-rep will reach out with next steps."
+
+  utter_recruiting/ask_Recruiting_HiringProcess_StartDate:
+  - text: "I'm sorry, I don't have an exact time for you. If you move forward in the hiring process, you can discuss a start date with our recruiter."
+
+  utter_recruiting/ask_Recruiting_Inclusion:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, religion, national origin, age, sex, sexual orientation, gender identity, veteran status, disability or genetics."
+
+  utter_recruiting/ask_Recruiting_Inclusion_Accommodations:
+  - text: "If you require special accommodations, please let us know and we will work with your needs."
+
+  utter_recruiting/ask_Recruiting_Inclusion_BabyBoomer:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to age."
+
+  utter_recruiting/ask_Recruiting_Inclusion_Disability:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to disability or genetics."
+
+  utter_recruiting/ask_Recruiting_Inclusion_EEO:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, religion, national origin, age, sex, sexual orientation, gender identity, veteran status, disability or genetics."
+
+  utter_recruiting/ask_Recruiting_Inclusion_Female:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to sex or gender identity."
+
+  utter_recruiting/ask_Recruiting_Inclusion_Generational:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to age."
+
+  utter_recruiting/ask_Recruiting_Inclusion_GenerationX:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to age."
+
+  utter_recruiting/ask_Recruiting_Inclusion_GenerationY:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to age."
+
+  utter_recruiting/ask_Recruiting_Inclusion_LGBTQ:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to sexual orientation or gender identity."
+
+  utter_recruiting/ask_Recruiting_Inclusion_Military:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to military status."
+
+  utter_recruiting/ask_Recruiting_Inclusion_Millennials:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to age."
+
+  utter_recruiting/ask_Recruiting_Inclusion_Minority:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, or national origin."
+
+  utter_recruiting/ask_Recruiting_Inclusion_Religion:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to religion."
+
+  utter_recruiting/ask_Recruiting_Inclusion_Veterans:
+  - text: "Paradox provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to veteran status."
+
+  utter_recruiting/ask_Recruiting_Interview:
+  - text: "Our interview process begins with a phone or in-person interview. We're small so the process will depend upon role."
+
+  utter_recruiting/ask_Recruiting_Interview_Details:
+  - text: "Thank you for reaching out! I encourage you to review your interview confirmation. You can also reach our recruiter, Lauren, at 602.914.7647 or laurenk@paradox.ai."
+
+  utter_recruiting/ask_Recruiting_Interview_Dress:
+  - text: "That's a great question! While Paradox's attire is business casual, it's a best practice to dress professional in a formal interview. Impress us!"
+
+  utter_recruiting/ask_Recruiting_Interview_Followup:
+  - text: "I'm sorry, I don't have an exact time for you. A #company-rep will reach out soon to discuss next steps."
+
+  utter_recruiting/ask_Recruiting_Interview_Group:
+  - text: "Great question! Our interview process does not include group interviews."
+
+  utter_recruiting/ask_Recruiting_Interview_Interviewer:
+  - text: "Thank you for reaching out! Please feel free to reach out to our recruiter, Lauren, at 602.914.7647 or laurenk@paradox.ai for more information."
+
+  utter_recruiting/ask_Recruiting_Interview_Issues:
+  - text: "I'm sorry you're having issues with scheduling. I encourage you to select one of the times listed. If you need further assistance, please contact our recruiter at 602.914.7647 or laurenk@paradox.ai."
+
+  utter_recruiting/ask_Recruiting_Interview_Location:
+  - text: "I encourage you to review your interview confirmation. You can also contact our recruiter, Lauren, at 602.914.7647 or laurenk@paradox.ai for more information."
+
+  utter_recruiting/ask_Recruiting_Interview_Open:
+  - text: "Chatting with me is a good start! A recruiter will reach out to you to discuss next steps."
+
+  utter_recruiting/ask_Recruiting_Interview_Position:
+  - text: "Thank you for checking in! Please feel free to reach out to our recruiter, Lauren, at 602.914.7647 or laurenk@paradox.ai for more information."
+
+  utter_recruiting/ask_Recruiting_Interview_Preparation:
+  - text: "That's a great question! I would recommend doing your research ahead of time. Make sure to come prepared and remember to be yourself!"
+
+  utter_recruiting/ask_Recruiting_ReferralProgram:
+  - text: "We are always looking for the best talent for our team! If a current employee knows someone who would be a great addition to our team, we will gladly accept a referral."
+
+  utter_recruiting/ask_Recruiting_ReferralProgram_Status:
+  - text: "Thank you for asking about your referral's status. Please reach out to a #company-rep for more information."
+
+  utter_recruiting/ask_Recruiting_RequestHuman:
+  - text: "Okay. I'll notify a #company-rep who will be in touch with you soon."
+
+  utter_recruiting/ask_Recruiting_Requirements:
+  - text: "The requirements for each position will vary. However, if you're hardworking and enthusiastic about what we're working on, we'd love to hear from you!"
+
+  utter_recruiting/ask_Recruiting_Requirements_Age:
+  - text: "The requirements for each position will vary. However, if you're hardworking and enthusiastic about what we're working on, we'd love to hear from you!"
+
+  utter_recruiting/ask_Recruiting_Requirements_Education:
+  - text: "The requirements for each position will vary. However, if you're hardworking and enthusiastic about what we're working on, we'd love to hear from you!"
+
+  utter_recruiting/ask_Recruiting_Requirements_Experience:
+  - text: "The requirements for each position will vary. However, if you're hardworking and enthusiastic about what we're working on, we'd love to hear from you!"
+
+  utter_recruiting/ask_Recruiting_Requirements_Language:
+  - text: "The requirements for each position will vary. However, if you're hardworking and enthusiastic about what we're working on, we'd love to hear from you!"
+
+  utter_recruiting/ask_Recruiting_Requirements_Licensure:
+  - text: "The requirements for each position will vary. However, if you're hardworking and enthusiastic about what we're working on, we'd love to hear from you!"
+
+  utter_recruiting/ask_Recruiting_Requirements_Physical:
+  - text: "The requirements for each position will vary. However, if you're hardworking and enthusiastic about what we're working on, we'd love to hear from you!"
+
+  utter_recruiting/ask_Recruiting_Requirements_Unqualified:
+  - text: "Thank you for asking about whether you qualify for a role. I don't have an answer for this right now. Is there something else I can help you with?"
+
+  utter_recruiting/ask_Recruiting_Unhappy:
+  - text: "I’m sorry I wasn't able to help. I'll notify a #company-rep who will be in touch soon."
+
+  utter_recruiting/ask_Recruiting_Update:
+  - text: "Thank you for asking about our Recruiting Update!"
+
+  utter_team/ask_Team:
+  - text: "We are a small team of dreamers and doers working to build meaningful software that enables the employment connections that change lives."
+
+  utter_team/ask_Team_AverageAge:
+  - text: "Some of us are experienced professionals. Some of us just walked out of college. All of us are driven to succeed. And the vision that brings us together each and every day is a world where people love what they do."
+
+  utter_team/ask_Team_AverageTenure:
+  - text: "Our team is full of employees who have been with the company for many years, however, we are always looking for the best talent to join our team."
+
+  utter_team/ask_Team_BoardofDirectors:
+  - text: "Paradox is backed and funded by Recruiting Ventures. We do not have a board of directors at this time."
+
+  utter_team/ask_Team_Count:
+  - text: "We are a small team of dreamers and doers working to build meaningful software that enables the employment connections that change lives."
+
+  utter_team/ask_Team_CurrentEmployee:
+  - text: "That's great to hear! I hope you enjoy working here as much as I do. :)"
+
+  utter_team/ask_Team_CurrentEmployee_Portal:
+  - text: "Thank you for asking about our employee portal. I don't have an answer for this right now. Is there something else I can help you with?"
+
+  utter_team/ask_Team_Executives:
+  - text: "Our leadership team includes Aaron Matos and Marc Chesley. Learn more about our leadership here: https://paradox.ai/leadership\nThe team is growing quickly though, so our company's leadership is expanding too!"
+
+  utter_team/ask_Team_Executives_CEO:
+  - text: "Aaron Matos is the Founder and Chief Executive Officer of Paradox. He is a recognized expert on recruiting, employment branding and recruitment software & technology, and has spoken at dozens of national & local human resources conferences."
+
+  utter_team/ask_Team_Executives_CFO:
+  - text: "We don't have a CFO right now, but don't worry, our CEO and COO have it covered! :)"
+
+  utter_team/ask_Team_Executives_CMO:
+  - text: "We don't have a CMO right now. Our CEO wears the CMO hat!"
+
+  utter_team/ask_Team_Executives_COO:
+  - text: "Marc Chesley became COO of Paradox in August 2017. He leads engineering and product execution—helping our vision become a reality."
+
+  utter_team/ask_Team_Executives_CPO:
+  - text: "We don't have a CPO right now. Our CEO wears the CPO hat!"
+
+  utter_team/ask_Team_Executives_CTO:
+  - text: "Marc Chesley became COO of Paradox in August 2017. He takes on many CTO responsibilities by leading engineering and product execution—helping our vision become a reality."
+
+  utter_team/ask_Team_OrganizationChart:
+  - text: "At Paradox, we aren’t big on titles, but they can help to frame tasks for a job. Sure, we have specific roles to fill, but we’re also good at finding a place for people that can make a difference. In a start-up, the only goal is building world-class products and an amazing organization focused on serving our clients."
+
+  utter_team/ask_Team_PreviousEmployee:
+  - text: "It's nice to hear from you again. Do you have any questions I can answer?"
+
+  utter_team/ask_Team_ProspectiveCandidates:
+  - text: "We are a small team of dreamers and doers working to build meaningful software that enables the employment connections that change lives. We are looking for passionate individuals who share our vision and the commitment to see it through. Join us."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

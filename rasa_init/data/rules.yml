@@ -1,0 +1,61 @@
+version: "3.1"
+
+rules:
+
+- rule: respond to jobs
+  steps:
+  - intent: faq1
+  - action: utter_faq1
+
+- rule: respond to benefits
+  steps:
+  - intent: benefits
+  - action: utter_benefits
+
+- rule: respond to benefits
+  steps:
+  - intent: company
+  - action: utter_company
+
+- rule: respond to compensation
+  steps:
+  - intent: compensation
+  - action: utter_compensation
+
+- rule: respond to culture
+  steps:
+  - intent: culture
+  - action: utter_culture
+
+- rule: respond to development
+  steps:
+  - intent: development
+  - action: utter_development
+
+- rule: respond to events
+  steps:
+  - intent: events
+  - action: utter_events
+
+- rule: respond to olivia
+  steps:
+  - intent: olivia
+  - action: utter_olivia
+
+- rule: respond to policies
+  steps:
+  - intent: policies
+  - action: utter_policies
+
+- rule: respond to recruiting
+  steps:
+  - intent: recruiting
+  - action: utter_recruiting
+
+- rule: respond to team
+  steps:
+  - intent: team
+  - action: utter_team
+
+
+

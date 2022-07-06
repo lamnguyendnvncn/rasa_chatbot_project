@@ -1,0 +1,143 @@
+{
+  "keywords": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "language": {
+    "precision": 0.8546409807355516,
+    "recall": 0.928639391056137,
+    "f1-score": 0.8901048791609668,
+    "support": 1051,
+    "confused_with": {}
+  },
+  "team_type": {
+    "precision": 0.6868512110726643,
+    "recall": 0.6940559440559441,
+    "f1-score": 0.6904347826086957,
+    "support": 1144,
+    "confused_with": {
+      "development_type": 5
+    }
+  },
+  "compensation_type": {
+    "precision": 0.7843691148775894,
+    "recall": 0.6878612716763006,
+    "f1-score": 0.7329520457545095,
+    "support": 2422,
+    "confused_with": {
+      "recruiting_information": 3
+    }
+  },
+  "culture_type": {
+    "precision": 0.7635096968555828,
+    "recall": 0.8340189222542164,
+    "f1-score": 0.7972082964710508,
+    "support": 4862,
+    "confused_with": {
+      "company_information": 9
+    }
+  },
+  "policy_type": {
+    "precision": 0.814133591481123,
+    "recall": 0.6798706548100243,
+    "f1-score": 0.7409691629955947,
+    "support": 1237,
+    "confused_with": {
+      "recruiting_information": 5
+    }
+  },
+  "olivia_type": {
+    "precision": 0.7441000852999715,
+    "recall": 0.3634722222222222,
+    "f1-score": 0.4883829429877764,
+    "support": 7200,
+    "confused_with": {
+      "company_information": 38
+    }
+  },
+  "company_information": {
+    "precision": 0.7647860916993353,
+    "recall": 0.8477234082750803,
+    "f1-score": 0.8041218637992831,
+    "support": 5293,
+    "confused_with": {
+      "company_name": 5
+    }
+  },
+  "recruiting_information": {
+    "precision": 0.6229192616917676,
+    "recall": 0.5168169860954528,
+    "f1-score": 0.5649293966623876,
+    "support": 10644,
+    "confused_with": {
+      "development_type": 2
+    }
+  },
+  "event_type": {
+    "precision": 0.8186274509803921,
+    "recall": 0.8166259168704156,
+    "f1-score": 0.817625458996328,
+    "support": 409,
+    "confused_with": {
+      "company_information": 2
+    }
+  },
+  "company_name": {
+    "precision": 0.7647777234978017,
+    "recall": 0.87703081232493,
+    "f1-score": 0.8170668058455116,
+    "support": 3570,
+    "confused_with": {
+      "company_information": 1
+    }
+  },
+  "job_information": {
+    "precision": 0.5379310344827586,
+    "recall": 0.6255397902529303,
+    "f1-score": 0.57843696520251,
+    "support": 1621,
+    "confused_with": {
+      "recruiting_information": 5
+    }
+  },
+  "benefits_type": {
+    "precision": 0.7310302282541641,
+    "recall": 0.8505293378790597,
+    "f1-score": 0.78626524010948,
+    "support": 5573,
+    "confused_with": {
+      "culture_type": 3
+    }
+  },
+  "development_type": {
+    "precision": 0.7902899527983817,
+    "recall": 0.5822155986090413,
+    "f1-score": 0.6704805491990847,
+    "support": 2013,
+    "confused_with": {
+      "company_information": 2
+    }
+  },
+  "micro avg": {
+    "precision": 0.7229260413061036,
+    "recall": 0.6659863945578232,
+    "f1-score": 0.6932890733056709,
+    "support": 47040
+  },
+  "macro avg": {
+    "precision": 0.691283315980506,
+    "recall": 0.6646000183129823,
+    "f1-score": 0.6699270278423698,
+    "support": 47040
+  },
+  "weighted avg": {
+    "precision": 0.7215311929098116,
+    "recall": 0.6659863945578232,
+    "f1-score": 0.6802587784379875,
+    "support": 47040
+  },
+  "accuracy": 0.9619298667351918
+}

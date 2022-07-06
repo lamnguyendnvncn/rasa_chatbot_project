@@ -1,0 +1,18 @@
+version: "3.1"
+
+rules:
+
+- rule: Job location and category Remember
+  steps:
+  - intent: job_find
+  - action: action_job_remember
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
