@@ -2,6 +2,7 @@ version: "3.1"
 
 rules:
 
+# Rules for asking for response from action action_job_remember
 - rule: Job location and category Remember
   steps:
   - intent: job_find
