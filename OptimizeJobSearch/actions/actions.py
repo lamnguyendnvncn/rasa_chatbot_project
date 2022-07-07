@@ -43,7 +43,7 @@ class ActionRememberJob(Action):
             job_place=tracker.get_slot("location")
             if not job_place:
                 job_place=next(tracker.get_latest_entity_values("job_location"),None)
-
+        dispatcher.utter_message(text=f"Received job category: {job_type}, job location: {job_place}.\n")
         #if there's no entity values in both latest entities and slot return this message.
         if not job_type and not job_place:
             msg="I did not receive any information about job category and job location. Please let me know your desired job information!"
@@ -63,18 +63,19 @@ class ActionRememberJob(Action):
             return [SlotSet("category", job_type)]
 
         #if have both information about job location and category, return this message.
-        df=pd.read_csv('db.csv')
-        target=df[df['Category']==job_type][df['Location']==job_place]
+        df=pd.read_csv('/home/lam/Downloads/intern-rasa_chatbot(my_repo)/OptimizeJobSearch/actions/db.csv')
+        df1=df[df['Category']==job_type]
+        target=df1[df['Location']==job_place]
         if len(target)==0:
             msg=f"Sorry! We cannot find any {job_type} position in {job_place}. We will update our career opportunities soon!"
             dispatcher.utter_message(text=msg)
             return [SlotSet("category", job_type), SlotSet("location", job_place)]
         else:
-            if (target['Available'][0]=="Yes"):
-                msg=f"There's job available in {job_type} position in {job_place}. You can contact {target['Contact Information'][0]} for further information! "
+            if (target['Available'].iloc[0]=="Yes"):
+                msg=f"There's job available in {job_type} position in {job_place}. You can contact {target['Contact Information'].iloc[0]} for further information! "
                 dispatcher.utter_message(text=msg)
                 return [SlotSet("category", job_type), SlotSet("location", job_place)]
             else:
-                msg=f"There's job in {job_type} position in {job_place} but it's not available now. You can contact {target['Contact Information'][0]} for future opportunities!"
+                msg=f"There's job in {job_type} position in {job_place} but it's not available now. You can contact {target['Contact Information'].iloc[0]} for future opportunities!"
                 dispatcher.utter_message(text=msg)
                 return [SlotSet("category", job_type), SlotSet("location", job_place)]
