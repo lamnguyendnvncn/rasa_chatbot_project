@@ -4725,6 +4725,12 @@ nlu:
     - zip code 19606
     - Powell OH
     - Powell, OH
+    - danang
+    - vietnam
+    - texas
+    - ho chi minh
+    - minnesota
+    - sandiego
 - lookup: job_category
   examples: |
     - AE
@@ -4897,6 +4903,9 @@ nlu:
     - warehouse
     - welder
     - yard worker
+    - data engineering
+    - data analyst
+
 - lookup: brand
   examples: |
     - AngelsGrace Hospice

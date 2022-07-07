@@ -6,6 +6,7 @@
 
 
 # This is a simple example for a custom action which utters "Hello World!"
+import pandas as pd
 
 from typing import Any, Text, Dict, List
 
@@ -62,8 +63,18 @@ class ActionRememberJob(Action):
             return [SlotSet("category", job_type)]
 
         #if have both information about job location and category, return this message.
-        msg=f"I recorded that you looking for jobs in position {job_type} and in {job_place}. But unfortunately, we don't have any available postions according to your request. Please return back in other time to see new updates!"
-        dispatcher.utter_message(text=msg)
-        return [SlotSet("category", job_type), SlotSet("location", job_place)]
-
-
+        df=pd.read_csv('db.csv')
+        target=df[df['Category']==job_type][df['Location']==job_place]
+        if len(target)==0:
+            msg=f"Sorry! We cannot find any {job_type} position in {job_place}. We will update our career opportunities soon!"
+            dispatcher.utter_message(text=msg)
+            return [SlotSet("category", job_type), SlotSet("location", job_place)]
+        else:
+            if (target['Available'][0]=="Yes"):
+                msg=f"There's job available in {job_type} position in {job_place}. You can contact {target['Contact Information'][0]} for further information! "
+                dispatcher.utter_message(text=msg)
+                return [SlotSet("category", job_type), SlotSet("location", job_place)]
+            else:
+                msg=f"There's job in {job_type} position in {job_place} but it's not available now. You can contact {target['Contact Information'][0]} for future opportunities!"
+                dispatcher.utter_message(text=msg)
+                return [SlotSet("category", job_type), SlotSet("location", job_place)]
