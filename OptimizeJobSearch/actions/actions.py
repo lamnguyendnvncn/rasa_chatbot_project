@@ -62,15 +62,17 @@ class ActionRememberJob(Action):
             dispatcher.utter_message(text=msg)
             return [SlotSet("category", job_type)]
 
-        #if have both information about job location and category, return this message.
+        #if have both information about job location and category:
         df=pd.read_csv('/home/lam/Downloads/intern-rasa_chatbot(my_repo)/OptimizeJobSearch/actions/db.csv')
         df1=df[df['Category']==job_type]
         target=df1[df['Location']==job_place]
+        #if there's no job that has the same category and location in database, return this
         if len(target)==0:
             msg=f"Sorry! We cannot find any {job_type} position in {job_place}. We will update our career opportunities soon!"
             dispatcher.utter_message(text=msg)
             return [SlotSet("category", job_type), SlotSet("location", job_place)]
         else:
+            #If there's jobs that satisfy category and location but not available, return this.
             if (target['Available'].iloc[0]=="Yes"):
                 msg=f"There's job available in {job_type} position in {job_place}. You can contact {target['Contact Information'].iloc[0]} for further information! "
                 dispatcher.utter_message(text=msg)
