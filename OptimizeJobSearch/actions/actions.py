@@ -6,6 +6,7 @@
 
 
 # This is a simple example for a custom action which utters "Hello World!"
+from this import d
 import pandas as pd
 
 from typing import Any, Text, Dict, List
@@ -15,7 +16,9 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 
 job_synonym={
-    "artificial": "artificial intelligence"
+    "artificial": "artificial intelligence",
+    "nurses": "nurse",
+    "drivers": "driver"
 }
 
 class ActionRememberJob(Action):
@@ -51,13 +54,15 @@ class ActionRememberJob(Action):
         
         # Preprocessing job category and job location
         #job category:
-        job_type=job_type.lower()
-        job_type=job_synonym.get(job_type,job_type)
+        if job_type:
+            job_type=job_type.lower()
+            job_type=job_synonym.get(job_type,job_type)
         #job location:
-        job_place=job_place.split(",")[0]
-        job_place=job_place.split(" ") 
-        job_place=''.join(job_place)
-        job_place=job_place.lower()
+        if job_place:
+            job_place=job_place.split(",")[0]
+            job_place=job_place.split(" ") 
+            job_place=''.join(job_place)
+            job_place=job_place.lower()
 
         #show received job category and location:
         dispatcher.utter_message(text=f"Received job category: {job_type}, job location: {job_place}.\n")
@@ -83,11 +88,13 @@ class ActionRememberJob(Action):
         #if have both information about job location and category:
         df=pd.read_csv('/home/lam/Downloads/intern-rasa_chatbot(my_repo)/OptimizeJobSearch/actions/db.csv')
         df1=df[df['Category']==job_type]
+        df2=df[df['Location']==job_place]
         target=df1[df['Location']==job_place]
         #if there's no job that has the same category and location in database, return this
         if len(target)==0:
             msg=f"Sorry! We cannot find any {job_type} position in {job_place}. We will update our career opportunities soon!"
             dispatcher.utter_message(text=msg)
+            dispatcher.utter_message(text=f"There might be other job in {job_place} or {job_type} position in other place. Do you want us to check it for you?")
             return [SlotSet("category", job_type), SlotSet("location", job_place)]
         elif len(target)==1:
             #If there's jobs that satisfy category and location but not available, return this.
@@ -106,3 +113,73 @@ class ActionRememberJob(Action):
                 temp=target.iloc[i]
                 msg=f"Job category: {temp['Category']}, Job location: {temp['Location']}, Availability: {temp['Available']}, Company: {temp['Company']}, Contact Information: {temp['Contact Information']} \n"
                 dispatcher.utter_message(text=msg)
+                return [SlotSet("category", job_type), SlotSet("location", job_place)]
+
+confirmation_dict={
+    "Yes":"yes",
+    "y":"yes",
+    "n":"no",
+    "No":"no",
+    "Y":"yes",
+    "N":"no"
+}
+
+#use for see other jobs that have the same category or same location with desired job (just in case there's no job that satisfy the desired job of customer).
+class ActionOtherJob(Action):
+
+    def name(self) -> Text:
+        return "action_other_job"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text,Any]) -> List[Dict[Text,Any]]:
+        
+        confirmation=next(tracker.get_latest_entity_values("confirm"),None)
+        if not confirmation:
+            msg=f"Please let us know if you still want to see other job list!"
+            dispatcher.utter_message(text=msg)
+            return []
+        confirmation=confirmation_dict.get(confirmation,confirmation)
+        if confirmation=="yes":
+            job_type=tracker.get_slot("category")
+            job_place=tracker.get_slot("location")
+            if not job_type and not job_place:
+                msg=f"You haven't gived us information about job you want to find yet!"
+                dispatcher.utter_message(text=msg)
+                return[]
+
+            if job_type:
+                df=pd.read_csv("/home/lam/Downloads/intern-rasa_chatbot(my_repo)/OptimizeJobSearch/actions/db.csv")
+                target=df[df['Category']==job_type]
+                if len(target)==0:
+                    msg=f"There are no {job_type} job in our database. I'm sorry for this, you can find another job!"
+                    dispatcher.utter_message(text=msg)
+                else:
+                    msg=f"These are available {job_type} job in our database:\n"
+                    dispatcher.utter_message(text=msg)
+                    for i in range(len(target)):
+                        temp=target.iloc[i]
+                        msg=f"Job location: {temp['Location']}, Job category: {temp['Category']}, Availability: {temp['Available']}, Company: {temp['Company']}, Contact Information: {temp['Contact Information']} \n"
+                        dispatcher.utter_message(text=msg)
+                    dispatcher.utter_message(text="\n")
+
+            if job_place:
+                df=pd.read_csv("/home/lam/Downloads/intern-rasa_chatbot(my_repo)/OptimizeJobSearch/actions/db.csv")
+                target=df[df['Location']==job_place]
+                if len(target)==0:
+                    msg=f"There are no job available in {job_place}. I'm so sorry for this, you can find another job!"
+                    dispatcher.utter_message(text=msg)
+                else:
+                    msg=f"These are available jobs in {job_place}:\n"
+                    dispatcher.utter_message(text=msg)
+                    for i in range(len(target)):
+                        temp=target.iloc[i]
+                        msg=f"Job category: {temp['Category']}, Job location: {temp['Location']}, Availability: {temp['Available']}, Company: {temp['Company']}, Contact Information: {temp['Contact Information']} \n"
+                        dispatcher.utter_message(text=msg)
+            return []
+        else:
+            msg="Ok. You can find another job!"
+            dispatcher.utter_message(text=msg)
+            return []
+        
+        

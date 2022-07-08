@@ -364,7 +364,7 @@ nlu:
     - Can you tell me if there are [HR Manager](job_category) open jobs in [99205](job_location)
     - [Canada](job_location), or main land [europe](job_location)
     - [Canteen](brand) [Route driver](job_category) jobs
-    - [Canteen](brand) [route driver](job_category) jobs in [NC](job_location)\n
+    - [Canteen](brand) [route driver](job_category) jobs in [NC](job_location)
     - Carmel [Indianapolis](job_location) [Utilty locator](job_category)
     - [Cashier](job_category) or [housekeeping](job_category) somewhere in the [85225](job_location) or [60611](job_location) area
     - [Catering](job_category) jobs in [80235](job_location)
@@ -3093,6 +3093,27 @@ nlu:
     - you have a [Facilities Director](job_category) role open in [Prairie View, TX](job_location).
     - you have any opening for [software developer](job_category) in [Delhi](job_location)/NCR
     - you have positions for [medical assistant](job_category)?
+
+- intent: see_job_list
+  examples: |
+    - [Yes](confirm), I do.
+    - [No](confirm), thanks.
+    - [yes](confirm), please.
+    - [yes](confirm), please show me other jobs available.
+    - [Yes](confirm) if that's possible.
+    - [Yes](confirm).
+    - [no](confirm), I don't need it. 
+    - [no](confirm).
+    - [No](confirm)
+    - [no](confirm) but thanks for suggestion.
+    - [yes](confirm), thanks a lot.
+    - [Yes](confirm), thank you so much.
+    - [no](confirm), but thank you.
+    - [Yes](confirm), I want to see it
+    - [y](confirm)
+    - [n](confirm)
+    - [Y](confirm)
+    - [N](confirm)
 - synonym: AE
   examples: |
     - ae

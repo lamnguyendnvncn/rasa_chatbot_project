@@ -8,6 +8,11 @@ rules:
   - intent: job_find
   - action: action_job_remember
 
+- rule: Give job list if cusomter need
+  steps:
+  - intent: see_job_list
+  - action: action_other_job
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
