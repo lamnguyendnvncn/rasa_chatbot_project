@@ -14,6 +14,10 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 
+job_synonym={
+    "artificial": "artificial intelligence",    
+}
+
 class ActionRememberJob(Action):
 
     def name(self) -> Text:
@@ -43,6 +47,7 @@ class ActionRememberJob(Action):
             job_place=tracker.get_slot("location")
             if not job_place:
                 job_place=next(tracker.get_latest_entity_values("job_location"),None)
+        job_type=job_synonym.get(job_type,job_type)
         dispatcher.utter_message(text=f"Received job category: {job_type}, job location: {job_place}.\n")
         #if there's no entity values in both latest entities and slot return this message.
         if not job_type and not job_place:

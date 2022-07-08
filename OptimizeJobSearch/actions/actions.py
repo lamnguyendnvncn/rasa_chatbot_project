@@ -14,6 +14,10 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 
+job_synonym={
+    "artificial": "artificial intelligence"
+}
+
 class ActionRememberJob(Action):
 
     def name(self) -> Text:
@@ -43,7 +47,21 @@ class ActionRememberJob(Action):
             job_place=tracker.get_slot("location")
             if not job_place:
                 job_place=next(tracker.get_latest_entity_values("job_location"),None)
+        
+        
+        # Preprocessing job category and job location
+        #job category:
+        job_type=job_type.lower()
+        job_type=job_synonym.get(job_type,job_type)
+        #job location:
+        job_place=job_place.split(",")[0]
+        job_place=job_place.split(" ") 
+        job_place=''.join(job_place)
+        job_place=job_place.lower()
+
+        #show received job category and location:
         dispatcher.utter_message(text=f"Received job category: {job_type}, job location: {job_place}.\n")
+        
         #if there's no entity values in both latest entities and slot return this message.
         if not job_type and not job_place:
             msg="I did not receive any information about job category and job location. Please let me know your desired job information!"
@@ -71,7 +89,7 @@ class ActionRememberJob(Action):
             msg=f"Sorry! We cannot find any {job_type} position in {job_place}. We will update our career opportunities soon!"
             dispatcher.utter_message(text=msg)
             return [SlotSet("category", job_type), SlotSet("location", job_place)]
-        else:
+        elif len(target)==1:
             #If there's jobs that satisfy category and location but not available, return this.
             if (target['Available'].iloc[0]=="Yes"):
                 msg=f"There's job available in {job_type} position in {job_place}. You can contact {target['Contact Information'].iloc[0]} for further information! "
@@ -81,3 +99,10 @@ class ActionRememberJob(Action):
                 msg=f"There's job in {job_type} position in {job_place} but it's not available now. You can contact {target['Contact Information'].iloc[0]} for future opportunities!"
                 dispatcher.utter_message(text=msg)
                 return [SlotSet("category", job_type), SlotSet("location", job_place)]
+        #If there's more than one job satisfy the requirements.
+        else:
+            dispatcher.utter_message(text="There are more than one job satisify your findings. Here is the list:\n")
+            for i in range(len(target)):
+                temp=target.iloc[i]
+                msg=f"Job category: {temp['Category']}, Job location: {temp['Location']}, Availability: {temp['Available']}, Company: {temp['Company']}, Contact Information: {temp['Contact Information']} \n"
+                dispatcher.utter_message(text=msg)
