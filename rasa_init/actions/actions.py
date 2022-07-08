@@ -63,7 +63,7 @@ class ActionRememberJob(Action):
             return [SlotSet("category", job_type)]
 
         #if have both information about job location and category:
-        df=pd.read_csv('/home/lam/Downloads/intern-rasa_chatbot(my_repo)/OptimizeJobSearch/actions/db.csv')
+        df=pd.read_csv('/home/lam/Downloads/intern-rasa_chatbot(my_repo)/OptimizeJobSearch/actions/db.csv') #replace the path here with your db.csv path
         df1=df[df['Category']==job_type]
         target=df1[df['Location']==job_place]
         #if there's no job that has the same category and location in database, return this
