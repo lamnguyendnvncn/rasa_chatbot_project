@@ -66,3 +66,4 @@ session_config:
 actions:
 - action_job_remember
 - action_other_job
+# - action_good_bye

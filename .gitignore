@@ -8,3 +8,5 @@ rasa_init/nlu_jobonly_intent
 rasa_init/split_nlu_train_test
 rasa_init/results
 OptimizeJobSearch/actions/interact_with_db.ipynb
+OptimizedJobSearch(using_form)
+OptimizeJobSearch/story_graph.dot

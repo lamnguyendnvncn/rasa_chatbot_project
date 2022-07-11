@@ -146,7 +146,7 @@ class ActionOtherJob(Action):
             if not job_type and not job_place:
                 msg=f"You haven't gived us information about job you want to find yet!"
                 dispatcher.utter_message(text=msg)
-                return[]
+                return []
 
             if job_type:
                 df=pd.read_csv("/home/lam/Downloads/intern-rasa_chatbot(my_repo)/OptimizeJobSearch/actions/db.csv")
@@ -182,4 +182,14 @@ class ActionOtherJob(Action):
             dispatcher.utter_message(text=msg)
             return []
         
+# class ActionGoodBye(Action):
+
+#     def name(self) -> Text:
+#         return "action_good_bye"
         
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text,Any]) -> List[Dict[Text,Any]]:
+        
+        
+#         return []
