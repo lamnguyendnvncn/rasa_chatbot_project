@@ -181,7 +181,15 @@ class ActionOtherJob(Action):
             msg="Ok. You can find another job!"
             dispatcher.utter_message(text=msg)
             return []
-        
+
+from rasa_sdk.events import ConversationPaused
+
+class PauseConversation(Action):
+    def name(self) -> Text:
+        return "pause_conversation"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text,Any]):
+        return [ConversationPaused()]
 # class ActionGoodBye(Action):
 
 #     def name(self) -> Text:
