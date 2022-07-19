@@ -2,10 +2,10 @@ version: "3.1"
 
 rules:
 
-- rule: respond to jobs
+- rule: Job location and category Remember
   steps:
-  - intent: faq1
-  - action: utter_faq1
+  - intent: job_find
+  - action: action_job_remember
 
 - rule: respond to benefits
   steps:

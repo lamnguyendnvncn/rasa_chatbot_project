@@ -2,15 +2,27 @@ version: "3.1"
 
 rules:
 
+# Rules for asking for response from action action_job_remember
 - rule: Job location and category Remember
   steps:
   - intent: job_find
   - action: action_job_remember
 
+- rule: Give job list if cusomter need
+  steps:
+  - intent: see_job_list
+  - action: action_other_job
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
+  - action: pause_conversation
+
+- rule: continue the conversation
+  steps:
+  - action: pause_conversation
+  - action: resume_conversation
 
 - rule: Say 'I am a bot' anytime the user challenges
   steps:

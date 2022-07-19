@@ -1,7 +1,7 @@
 version: "3.1"
 
 intents:
-- faq1
+- job_find
 - benefits
 - company
 - compensation
@@ -30,6 +30,32 @@ entities:
 - policy_type
 - recruiting_information
 - team_type
+- job_location
+- job_category
+- brand
+- employment_type
+- employment_status
+- remote_work
+- account
+- near_me
+- any_search
+- irrelevant
+
+slots:
+  location:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: job_location
+  
+  category:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: job_category
+
 
 responses:
   utter_benefits/ask_Benefits:
@@ -809,45 +835,6 @@ responses:
   utter_events/ask_Events_JobFair:
   - text: "We always have events planned throughout the year here at Paradox. You can find us at industry conferences, hackathons, and much more!"
 
-  utter_faq1/ask_Jobs:
-  - text: "We're looking for the best talent to join our team! Currently, we have open positions in Engineering & AI, Product & Design, Marketing, and Sales & Service. Visit our career site to learn more about Paradox: #job-url"
-
-  utter_faq1/ask_Jobs_Availability:
-  - text: "We're looking for the best talent to join our team! Currently, we have open positions in Engineering & AI, Product & Design, Marketing, and Sales & Service. Consider this conversation your expression of interest at Paradox!"
-
-  utter_faq1/ask_Jobs_Challenges:
-  - text: "Since we're a start-up, we all wear several hats. We want someone who takes this opportunity to jump in and help support all of our clients."
-
-  utter_faq1/ask_Jobs_Description:
-  - text: "Since we're a start-up, we all wear several hats. We want someone who takes this opportunity to jump in and help support all of our clients."
-
-  utter_faq1/ask_Jobs_Hiring:
-  - text: "We're looking for the best talent to join our team! Currently, we have open positions in Engineering & AI, Product & Design, Marketing, and Sales & Service. Consider this conversation your expression of interest at Paradox!"
-
-  utter_faq1/ask_Jobs_Hiring_Count:
-  - text: "We're looking for the best talent to join our team! Currently, we have open positions in Engineering & AI, Product & Design, Marketing, and Sales & Service. Consider this conversation your expression of interest at Paradox!"
-
-  utter_faq1/ask_Jobs_Hiring_Frequency:
-  - text: "We're looking for the best talent to join our team! Currently, we have open positions in Engineering & AI, Product & Design, Marketing, and Sales & Service. Consider this conversation your expression of interest at Paradox!"
-
-  utter_faq1/ask_Jobs_Location:
-  - text: "Most of our employees work in our Scottsdale, AZ office during the week as we're building a team and require a lot of collaboration. Various roles may have some flexibility as approved by the CEO."
-
-  utter_faq1/ask_Jobs_Location_Restrictions:
-  - text: "Most of our employees work in our Scottsdale, AZ office during the week as we're building a team and require a lot of collaboration. Various roles may have some flexibility as approved by the CEO."
-
-  utter_faq1/ask_Jobs_Responsibilities:
-  - text: "Since we're a start-up, we all wear several hats. We want someone who takes this opportunity to jump in and help support all of our clients."
-
-  utter_faq1/ask_Jobs_Search:
-  - text: "We're looking for the best talent to join our team! Currently, we have open positions in Engineering & AI, Product & Design, Marketing, and Sales & Service. Consider this conversation your expression of interest at Paradox! You can learn more about our different teams by speaking with a recruiter. Hang in there and someone will reach out soon!"
-
-  utter_faq1/ask_Jobs_Status:
-  - text: "All of our employees work full-time and during typical business hours. We're a start-up, so we hope you're not afraid of hard work."
-
-  utter_faq1/ask_Jobs_TalentCommunity:
-  - text: "We're looking for the best talent to join our team. If that's you, thanks for raising your hand! We'll reach out if we have questions for you."
-
   utter_olivia/ask_Olivia_Background_Education:
   - text: "Good question. Best to keep that a secret for now. :)"
 
@@ -1570,3 +1557,6 @@ responses:
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+actions:
+- action_job_remember

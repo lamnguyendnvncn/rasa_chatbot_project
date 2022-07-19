@@ -9,6 +9,8 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - see_job_list
+  - continue_conversation
 
 entities:
 - job_category
@@ -21,6 +23,8 @@ entities:
 - account
 - near_me
 - any_search
+- confirm
+
 slots:
   location:
     type: text
@@ -62,3 +66,7 @@ session_config:
 
 actions:
 - action_job_remember
+- action_other_job
+- pause_conversation
+- resume_conversation
+# - action_good_bye

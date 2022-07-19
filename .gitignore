@@ -2,3 +2,12 @@ OptimizeJobSearch/models
 rasa_init/models
 rasa_init/.rasa
 OptimizeJobSearch/.rasa
+OptimizeJobSearch/actions/__pycache__
+rasa_init/actions/__pycache__
+rasa_init/nlu_jobonly_intent
+rasa_init/split_nlu_train_test
+rasa_init/results
+OptimizeJobSearch/actions/interact_with_db.ipynb
+OptimizedJobSearch(using_form)
+OptimizeJobSearch/story_graph.dot
+rasa_init/results/extract_intent_report.ipynb
