@@ -3114,6 +3114,15 @@ nlu:
     - [n](confirm)
     - [Y](confirm)
     - [N](confirm)
+
+- intent: continue_conversation
+  examples: |
+    - Continue the conversation.
+    - Bot wakeup!
+    - Wakeup!
+    - I need to talk with someone.
+    - Olivia wakeup!
+    - Can someone talk with me?
 - synonym: AE
   examples: |
     - ae

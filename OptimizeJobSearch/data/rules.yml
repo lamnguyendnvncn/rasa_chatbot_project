@@ -19,6 +19,11 @@ rules:
   - action: utter_goodbye
   - action: pause_conversation
 
+- rule: continue the conversation
+  steps:
+  - action: pause_conversation
+  - action: resume_conversation
+
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge

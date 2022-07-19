@@ -15,7 +15,7 @@
     "f1-score": 0.9680016099818878,
     "support": 7378,
     "confused_with": {
-      "faq1": 30,
+      "jobs": 30,
       "recruiting": 29
     }
   },
@@ -26,10 +26,10 @@
     "support": 22180,
     "confused_with": {
       "recruiting": 892,
-      "faq1": 172
+      "jobs": 172
     }
   },
-  "faq1": {
+  "jobs": {
     "precision": 0.9415428845232391,
     "recall": 0.9041965764770845,
     "f1-score": 0.9224919017886485,
@@ -46,7 +46,7 @@
     "support": 1498,
     "confused_with": {
       "recruiting": 81,
-      "faq1": 35
+      "jobs": 35
     }
   },
   "company": {
@@ -76,7 +76,7 @@
     "support": 1493,
     "confused_with": {
       "recruiting": 46,
-      "faq1": 23
+      "jobs": 23
     }
   },
   "recruiting": {
@@ -86,7 +86,7 @@
     "support": 22041,
     "confused_with": {
       "olivia": 280,
-      "faq1": 179
+      "jobs": 179
     }
   },
   "culture": {
@@ -96,7 +96,7 @@
     "support": 4804,
     "confused_with": {
       "recruiting": 61,
-      "faq1": 55
+      "jobs": 55
     }
   },
   "development": {
@@ -106,7 +106,7 @@
     "support": 3307,
     "confused_with": {
       "recruiting": 90,
-      "faq1": 29
+      "jobs": 29
     }
   },
   "accuracy": 0.946050507927466,

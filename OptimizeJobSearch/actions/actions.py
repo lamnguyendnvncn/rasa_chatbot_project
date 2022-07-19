@@ -6,7 +6,6 @@
 
 
 # This is a simple example for a custom action which utters "Hello World!"
-from this import d
 import pandas as pd
 
 from typing import Any, Text, Dict, List
@@ -182,14 +181,50 @@ class ActionOtherJob(Action):
             dispatcher.utter_message(text=msg)
             return []
 
-from rasa_sdk.events import ConversationPaused
+from rasa_sdk.events import ConversationPaused, ConversationResumed
+from rasa.utils.common import logger
 
 class PauseConversation(Action):
     def name(self) -> Text:
         return "pause_conversation"
 
-    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text,Any]):
+    async def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text,Any]):
+        logger.info("Pausing conversation")
+        sender_id=tracker.sender_id
+
+        dispatcher.utter_message(f"Pausing this conversation with sender_id: {sender_id} ")
+
+        dispatcher.utter_message("To resume, send this resume event to rasa shell:")
+
+        dispatcher.utter_message("""curl --request POST
+    --url 'http://localhost:5055/conversations/SENDER_ID/tracker/events?token=RASA_TOKEN'
+    --header 'content-type: application/json'
+    --data '[{"event": "resume}, {"event": "followup", "name": "resume_conversation"}]'
+        """)
+
         return [ConversationPaused()]
+
+    # def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text,Any]):
+    #     return [ConversationPaused()]
+
+class ResumeConversation(Action):
+    def name(self) -> Text:
+        return "resume_conversation"
+
+    async def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text,Any]):
+        logger.info("Resume conversation")
+
+        sender_id=tracker.sender_id
+
+        dispatcher.utter_message(f"Resume conversation with sender id: {sender_id}")
+
+        return [ConversationResumed()]
+
+
+    # def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]):
+    #     return [ConversationResumed()]
+
+
 # class ActionGoodBye(Action):
 
 #     def name(self) -> Text:

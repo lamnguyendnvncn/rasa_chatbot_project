@@ -10,6 +10,7 @@ intents:
   - mood_unhappy
   - bot_challenge
   - see_job_list
+  - continue_conversation
 
 entities:
 - job_category
@@ -67,4 +68,5 @@ actions:
 - action_job_remember
 - action_other_job
 - pause_conversation
+- resume_conversation
 # - action_good_bye

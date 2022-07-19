@@ -10,3 +10,4 @@ rasa_init/results
 OptimizeJobSearch/actions/interact_with_db.ipynb
 OptimizedJobSearch(using_form)
 OptimizeJobSearch/story_graph.dot
+rasa_init/results/extract_intent_report.ipynb
