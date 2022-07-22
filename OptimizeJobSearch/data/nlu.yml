@@ -31,8 +31,8 @@ nlu:
 
 - intent: affirm
   examples: |
-    - yes
-    - y
+    - [yes](confirm)
+    - [y](confirm)
     - indeed
     - of course
     - that sounds good

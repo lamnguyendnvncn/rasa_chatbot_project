@@ -13,6 +13,12 @@ rules:
   - intent: see_job_list
   - action: action_other_job
 
+- rule: Give job list 2
+  steps:
+  - action: action_job_remember
+  - intent: affirm
+  - action: action_other_job
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye

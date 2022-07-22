@@ -189,18 +189,8 @@ class PauseConversation(Action):
         return "pause_conversation"
 
     async def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text,Any]):
-        logger.info("Pausing conversation")
-        sender_id=tracker.sender_id
 
-        dispatcher.utter_message(f"Pausing this conversation with sender_id: {sender_id} ")
-
-        dispatcher.utter_message("To resume, send this resume event to rasa shell:")
-
-        dispatcher.utter_message("""curl --request POST
-    --url 'http://localhost:5055/conversations/SENDER_ID/tracker/events?token=RASA_TOKEN'
-    --header 'content-type: application/json'
-    --data '[{"event": "resume}, {"event": "followup", "name": "resume_conversation"}]'
-        """)
+        dispatcher.utter_message(f"Pausing this conversation")
 
         return [ConversationPaused()]
 
@@ -236,3 +226,4 @@ class ResumeConversation(Action):
         
         
 #         return []
+
